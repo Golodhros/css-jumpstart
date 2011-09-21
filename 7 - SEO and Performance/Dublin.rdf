@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc= "http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.yoursite.com/">
+<dc:contributor>Lucia Silva</dc:contributor>
+<dc:date>2010-12-29</dc:date>
+<dc:description>Fashion Stylist Website Barcelona</dc:description>
+<dc:language>ES</dc:language>
+<dc:publisher>Lucia Silva Fashion Stylist</dc:publisher>
+<dc:source>http://www.luciasilvastylist.com/</dc:source>
+</rdf:Description>
+</rdf:RDF>

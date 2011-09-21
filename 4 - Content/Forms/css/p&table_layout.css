@@ -1,0 +1,84 @@
+/*	Ejemplo de formulario realizado con párrafos y una sección final con tabla
+	Extraído de la página de Aramon bike
+---------------------------------------------------------------------------------------------------------------------------------*/
+	form p {
+			color: #ffffff;
+			font-size: 10px;
+			font-weight: 900;
+			font-family: Arial, Verdana, Helvetica, sans-serif;
+			background-image: url(../images/cuadradito.gif);
+			background-repeat: no-repeat;
+			background-position: left center;
+			padding-left: 13px;
+			margin: 0px;
+	}
+	form img{
+			margin: 4.5px 0;
+	}
+			form p.club {
+					background-position: 0 9px;
+			}
+			form div table a {
+					color: #FFFFFF;
+					font-size: 10px;
+					font-weight: 900;
+			}
+			form div table td.condiciones{
+					height: 20px;
+			}
+			form div table td.enviar input{
+					margin-left: 132px;
+			}
+	form div{
+			background-image: url(../images/cuadradito.gif);
+			background-repeat: no-repeat;
+			background-position: -1px 14px;
+			}
+	form table {
+			border-collapse: collapse;
+			margin-top: 5px;
+			margin-right: 10px;
+			margin-left: 10px;
+	}
+			form table tr td {
+					color: #ffffff;
+					font-size: 10px;
+					font-weight:900;
+					font-family:Arial, Verdana, Helvetica, sans-serif;
+					margin: 0px;
+			}
+			#observaciones_TXT{
+					margin-left: 10px;
+			}
+			#nombre_club_TXT {
+					width: 85%;
+			}
+			#data_primera_noche_TXT, 
+			#num_ciclistas_INT, 
+			#nombre_club_TXT, 
+			#num_etapas_INT{
+					vertical-align: bottom;
+					margin: 0 0 0 6px;
+					font-size: 10px;
+					border: 1px solid #000;
+			}
+			form div table tr td #apellidos_TXT,
+			form div table tr td #direccion_TXT,
+			form div table tr td #localidad_TXT,
+			form div table tr td #localidad_TXT,
+			form div table tr td #mail_TXT{
+					width: 100%;
+					font-size: 10px;
+					border: 1px solid #000;
+			}
+			form div table tr td #nombre_TXT,
+			form div table tr td #dni_TXT,
+			form div table tr td #cp_TXT,
+			form div table tr td #telefono_TXT{
+					font-size: 10px;
+					border: 1px solid #000;
+			}
+			form div table tr td #nombre_TXT{width: 106px;}
+			form div table tr td #dni_TXT{width: 127px;}
+			form div table tr td #cp_TXT{width: 124px;}
+			form div table tr td #telefono_TXT{width: 103px;}

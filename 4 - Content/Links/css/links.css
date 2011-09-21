@@ -1,0 +1,27 @@
+/* Links and Dynamic Pseudo-Classes */
+
+/*	This is the correct order to place the various pseudo-classes within your style sheet in order
+	to see the correct behaviour in the browser. LoVe/HAte, like so:		*/
+	
+	a:link {
+		color:#F00;
+	}
+	a:visited {
+		color:#999;
+	}
+	a:hover {
+		color:#333;
+	}
+	a:active {
+		color:#000;
+	}
+
+
+/* Links con imágenes
+------------------------------------------------------*/
+	a.next_button
+	{
+		display: block;
+		background-image: url(../../3%20-%20Content/Positioning/css/next_button.gif);
+		text-indent: -99999px;
+	}

@@ -1,0 +1,41 @@
+
+/* PAGINA: Help Home */
+
+/*	Zona de Banners Superior	*/
+	.box-striped-medium-high .ico-orders_add-50, 
+	.box-striped-medium-high .ico-tech-50, 
+	.box-striped-medium-high .ico-address_mod-50 			{float:left;margin:18px 23px 0 16px;}
+	
+	.box-striped-medium-high .box-title 					{color:#808080;	font-size:21px;	font-weight:normal;	line-height:19px;margin:0 0 5px 20px;padding-top:16px;}
+	.box-striped-medium-high p 								{padding-top:17px;}
+
+/*	Acordeon en dos columnas	*/
+	.pag-who .important2 									{margin:0px;}
+		.pag-who .important2 span							{color:#fff;font-size:12px;}
+	
+	.pag-who .help-info-module 								{position:relative; border-bottom:2px dotted #585858;}
+		.pag-who .last-module 								{border-bottom:none;}
+	
+		.help-info-module .accordion-toggle 				{padding:10px 30px 10px;}
+			.help-info-module .active 						{background-color: #404040;font-weight:800;}
+				.help-info-module .accordion-toggle a 		{color:#fff;line-height:15px;text-decoration:none;}
+		.help-info-module .accordion-content 				{padding:0 30px 17px;background-color: #404040;line-height:14px;}
+
+	.help-info-module .open-close-btn 						{background:url("/front/get/img/spr-privalia.png") repeat scroll -570px -121px transparent;display:block;		height:10px;		left:10px;		position:absolute;		top:12px;	width:10px;	}
+		.help-info-module .active .open-close-btn 			{background-position:-570px -111px;}
+
+/* PAGINA: Apadrinamiento */
+	#sponsoring-info{}
+		.pag-sponsor #sponsoring-info h1					{font-size: 27px;font-weight: 800;color: #acacac;line-height:38px;}
+			.pag-sponsor h1 strong							{font-size: 48px;font-weight: 800;color: #ffffff;}
+		.pag-sponsor #sponsoring-info h2					{font-size: 27px;color: #ffffff;font-weight: 400;padding-top:6px;}
+			.pag-sponsor #sponsoring-info h2 strong			{font-weight: 800;}
+			.pag-sponsor #sponsoring-info h2 .second-line	{font-size: 27px;color: #acacac;}
+		.pag-sponsor #sponsoring-info p						{padding-top: 10px;}
+		.pag-sponsor #sponsoring-info .box .bot				{background: url(/front/get/img/img-barr-apadrina.gif) no-repeat top left;height: 39px;}
+	#sponsoring-form{}
+		.pag-sponsor #sponsoring-form h2					{font-size: 25px;color: #acacac;font-weight: 400;padding-top:6px;}
+			.pag-sponsor #sponsoring-form h2 strong			{color: #ffffff;font-weight: 700;}
+		.pag-sponsor #sponsoring-form .box .mid				{background: #252525 url(/front/get/img/img-apadrina-express.gif) no-repeat  left 57px ;}
+			.pag-sponsor #sponsoring-form input 			{height:13px;margin-bottom:16px;}
+		#sponsoring {height:140px;}

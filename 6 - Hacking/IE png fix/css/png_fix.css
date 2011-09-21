@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* PNG fix for IE6*/
+
+/*	That CSS selector must include the tags/elements on which you want PNG support -- basically, give it a comma-separated list of tags you use. It must also include the correct path to the .HTC relative to the HTML document location (not relative to the CSS document!). For instance, yours may look like this: 
+*/
+
+img, div, a, input { behavior: url(/css/resources/iepngfix.htc) }
+
+/*	If your site uses subfolders, open the .HTC file in a text editor like Windows Notepad and change the blankImg variable to include a correct path to blank.gif like so:
+
+    IEPNGFix.blankImg = '/images/blank.gif';
+*/

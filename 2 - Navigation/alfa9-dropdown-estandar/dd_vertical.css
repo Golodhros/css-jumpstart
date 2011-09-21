@@ -1,0 +1,103 @@
+
+/*****************************************************
+	- Autor: Marcos Iglesias
+	- Fecha: 17-12-2009	
+	- Referencias:	Craig Erskine, desde http://qrayg.com/experiment/cssmenus/#
+	- Proyecto: Librería Estándard Alfa9
+	- Función: Dynamic Menu System - Vertical
+*****************************************************/
+
+/*	Reset -	A Eliminar	*/
+	* { margin: 0; padding: 0; font-size: 100%; }
+
+/*	Menu	*/ 
+	#navmenu-v,
+	#navmenu-v li,
+	#navmenu-v ul { 
+		width: 160px; /* Menu Width */ 
+		margin: 0; list-style: none; 
+	} 
+	
+	#navmenu-v ul { 
+		display: none; 
+		position: absolute; 
+		top: 0; 
+		left: 100%; 
+		z-index: 9999; 
+	} /* Root Menu */
+	#navmenu-v li { 
+		float: left; 
+		position: relative; 
+		width: 100%; 
+	}
+	#navmenu-v li.iehover { 
+		z-index: 1000; /* IE z-index bugfix */ 
+	}	 
+	#navmenu-v a { 
+		border-top: 1px solid #FFF; 					/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		border-right: 1px solid #FFF; 					/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		padding: 6px; 
+		display: block; 
+		background: #DDD; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		color: #666; 									/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		font: bold 11px Arial, sans-serif; 				/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		text-decoration: none; 	
+		height: 1%; 
+	} /* Root Menu Hover Persistence */ 
+		
+	#navmenu-v a:hover,
+	#navmenu-v li:hover a,
+	#navmenu-v li.iehover a { 
+		background: #BBB; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		color: #FFF; 									/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 2nd Menu */ 
+		
+	#navmenu-v li:hover li a,
+	#navmenu-v li.iehover li a { 
+		float: none; 
+		background: #BBB; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 2nd Menu Hover Persistence */ 
+		
+	#navmenu-v li:hover li a:hover,
+	#navmenu-v li:hover li:hover a,
+	#navmenu-v li.iehover li a:hover,
+	#navmenu-v li.iehover li.iehover a { 
+		background: #999; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 3rd Menu */ 
+		
+	#navmenu-v li:hover li:hover li a,
+	#navmenu-v li.iehover li.iehover li a { 
+		background: #999; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 3rd Menu Hover Persistence */
+		 
+	#navmenu-v li:hover li:hover li a:hover,
+	#navmenu-v li:hover li:hover li:hover a,
+	#navmenu-v li.iehover li.iehover li a:hover,
+	#navmenu-v li.iehover li.iehover li.iehover a { 
+		background: #666; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 4th Menu */ 
+		
+	#navmenu-v li:hover li:hover li:hover li a,
+	#navmenu-v li.iehover li.iehover li.iehover li a { 
+		background: #666; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 4th Menu Hover */ 
+		
+	#navmenu-v li:hover li:hover li:hover li a:hover,
+	#navmenu-v li.iehover li.iehover li.iehover li a:hover { 
+		background: #333; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* Hover Function - Do Not Move */
+		 
+	#navmenu-v li:hover ul ul,
+	#navmenu-v li:hover ul ul ul,
+	#navmenu-v li.iehover ul ul,
+	#navmenu-v li.iehover ul ul ul { 
+		display: none; 
+		}
+	#navmenu-v li:hover ul,
+	#navmenu-v ul li:hover ul,
+	#navmenu-v ul ul li:hover ul,
+	#navmenu-v li.iehover ul,
+	#navmenu-v ul li.iehover ul,
+	#navmenu-v ul ul li.iehover ul { 
+		display: block; 
+		}

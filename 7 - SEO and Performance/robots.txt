@@ -1,0 +1,7 @@
+User-agent: *
+Allow:/
+Comment: I love you Google, come on in!
+Crawl-delay: 10
+Request-rate: 1/10m # one page every 10 minutes
+Robot-version: 2.0
+Sitemap: http://www.luciasilvastylist.com/sitemap.xml

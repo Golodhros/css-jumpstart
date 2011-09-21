@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/text.css" />
+        <title>Chapter 4: Text</title>
+		<style type="text/css">
+			
+			/*	Text Replacement	*/	
+			#mod_text_replacement .bd #h2{
+					position: relative; 
+					width: 250px;
+					height: 76px; 
+					overflow: hidden;
+			}
+					#mod_text_replacement .bd #h2 span {
+							position: absolute; 
+							width: 250px; 
+							height: 76px; 
+							left: 0; 
+							top: 0;
+							background: url(images/heading2.gif) no-repeat;
+					}
+			
+			/* Image Replacement from: http://mezzoblue.com/tests/revised-image-replacement/index.php*/
+			#header {
+					width: 329px;
+					height: 25px;
+					position: relative;
+			}
+					#header span {
+							background: url(images/sample-opaque.gif) no-repeat;
+							position: absolute;
+							width: 100%;
+							height: 100%;
+					}	
+			
+		</style>
+    </head>
+    <body>
+        <div id="mod_text_replacement">
+            <div class="hd">
+                <h1>Text Replacement</h1>
+            </div>
+            <div class="bd">
+                <h2 id="h2">Heading 2<span></span></h2>
+            </div>
+        </div>
+        <div id="mod_marginal_graphic_dropcap">
+            <div class="hd">
+                <h1>Marginal Graphic Dropcap</h1>
+            </div>
+            <div class="bd">
+                <p class="indent">
+                    <span class="graphic-dropcap">M<span></span></span>arginal Graphic Dropcap. The letter M has been covered by the dropcap image. Screen readers read the text and visual users see the image. If the browser cannot display the dropcap image, the text becomes visible.
+                </p>
+            </div>
+        </div>
+        <h3 id="header" title="Revised Image Replacement">
+			<span></span>Revised Image Replacement
+		</h3>
+
+
+        
+        <br/>
+        <br/>
+        <br/>
+        <div style="width:500px">
+            <p>
+                A continuación, os dejo una <b>tabla de equivalencias de tamaños de fuente</b>
+                que puede resultar de gran utilidad.
+            </p>
+            <div style="float:right;">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center" bgcolor="#ff6600" height="25" valign="middle">
+                            <b><span style="font-size:8.5pt;color:white;font-family:Verdana;">Pts</span></b>
+                        </td>
+                        <td align="center" bgcolor="#ff6600" height="25" valign="middle">
+                            <span class="Estilo2">Px</span>
+                        </td>
+                        <td align="center" bgcolor="#ff6600" height="25" valign="middle">
+                            <span class="Estilo2">Em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">16pt</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">22px</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.4em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">17pt</span>
+                        </td>
+                        <td align="center" height="25" valign="middle" width="68">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">23px</span>
+                        </td>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.45em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">18pt</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">24px</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.5em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">20pt</span>
+                        </td>
+                        <td align="center" height="25" valign="middle" width="68">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">26px</span>
+                        </td>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.6em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">22pt</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">29px</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.8em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">24pt</span>
+                        </td>
+                        <td align="center" height="25" valign="middle" width="68">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">32px</span>
+                        </td>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">2em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">26pt</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">35px</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">2.2em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">27pt</span>
+                        </td>
+                        <td align="center" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">36px</span>
+                        </td>
+                        <td align="center" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">2.25em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">28pt</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">37px</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">2.3em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">29pt</span>
+                        </td>
+                        <td align="center" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">38px</span>
+                        </td>
+                        <td align="center" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">2.35em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">30pt</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">40px</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">2.45em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">32pt</span>
+                        </td>
+                        <td align="center" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">42px</span>
+                        </td>
+                        <td align="center" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">2.55em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">34pt</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">45px</span>
+                        </td>
+                        <td align="center" bgcolor="#e2e2e2" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">2.75em</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#ffffff" height="25" valign="middle" width="67">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">36pt</span>
+                        </td>
+                        <td align="center" bgcolor="#ffffff" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">48px</span>
+                        </td>
+                        <td align="center" bgcolor="#ffffff" height="25" valign="middle">
+                            <span style="font-size:8.5pt;color:black;font-family:Verdana;">3em</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center" bgcolor="#ff6600" height="25" valign="middle" width="67">
+                        <b><span style="font-size:8.5pt;color:white;font-family:Verdana;">Pts</span></b>
+                    </td>
+                    <td align="center" bgcolor="#ff6600" height="25" valign="middle" width="68">
+                        <span class="Estilo2">Px</span>
+                    </td>
+                    <td align="center" bgcolor="#ff6600" height="25" valign="middle" width="67">
+                        <span class="Estilo2">Em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">6pt</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">8px</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">0.5em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">7pt</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">9px</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">0.55em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">7.5pt</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">10px</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">0.625em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">8pt</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">11px</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">0.7em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">9pt</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">12px</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">0.75em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">10pt</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">13px</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">0.8em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">10.5pt</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">14px</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">0.875em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">11pt</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">15px</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">0.95em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">12pt</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">16px</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">1em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">13pt</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">17px</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.05em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">13.5pt</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">18px</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.125em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">14pt</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">19px</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.2em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">14.5pt</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">20px</span>
+                    </td>
+                    <td align="center" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.25em</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">15pt</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="68">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">21px</span>
+                    </td>
+                    <td align="center" bgcolor="#e2e2e2" height="25" valign="middle" width="67">
+                        <span style="font-size:8.5pt;color:black;font-family:Verdana;">1.3em</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+div.booking_form_wrapper {
+		margin-top: 10px;
+}
+		div.booking_form_wrapper li {
+				border-bottom: 3px solid #000000;
+				list-style-image: url(../../../test/layouts/img/common/square_list_bullet.gif);
+				list-style-position: outside;
+				list-style-type: square;
+				margin: 5px 15px 0px;
+				padding-bottom: 5px;
+		}
+		div.booking_form_wrapper div.dl_wrapper {
+				background: transparent url(../../../test/layouts/img/common/square_list_bullet.gif) no-repeat left 10px;
+				padding-left: 15px;
+		}
+		div.booking_form_wrapper dl {
+				float: left;
+				margin-top: 5px;
+		}
+				div.booking_form_wrapper dt,
+				div.booking_form_wrapper dd {
+						margin-top: 2px;
+						text-align: right;
+				}
+						div.booking_form_wrapper dd input {
+								width: 100%;
+						}
+						
+		div.booking_form_wrapper dl.left {
+				width: 190px;
+				float: left;
+		}
+				div.booking_form_wrapper dl.left dt {
+						width: 60px;
+				}
+				div.booking_form_wrapper dl.left dd {
+						width: 120px;
+				}
+				
+		div.booking_form_wrapper dl.right {
+				width: 210px;
+				float: right;
+		}
+				div.booking_form_wrapper dl.right dt {
+						width: 70px;
+				}
+				div.booking_form_wrapper dl.right dd {
+					width: 120px;
+				}
+				
+		div.booking_form_wrapper label,
+		div.booking_form_wrapper span.label {
+				font-size: 10px;
+				font-weight: 900;
+				margin-right: 5px;
+		}
+		div.booking_form_wrapper input,
+		div.booking_form_wrapper select,
+		div.booking_form_wrapper textarea {
+				border: 1px solid #000000;
+				font-size: 10px;
+				margin: 0px;
+				padding: 0px;
+		}
+		div.booking_form_wrapper textarea {
+				font-size: 11px;
+		}
+		div.booking_form_wrapper input.no_border {
+				border: none;
+		}
+		div.booking_form_wrapper div.wrapper {
+				margin: 5px 15px 0px;
+		}
+		div.booking_form_wrapper input.button {
+				border: none;
+				float: right;
+		}
+		div.booking_form_wrapper a {
+				color: #FFFFFF;
+				font-size: 10px;
+				font-weight: 900;
+				text-decoration: none;
+		}
+

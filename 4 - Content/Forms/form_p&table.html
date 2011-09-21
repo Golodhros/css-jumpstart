@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+<form action="../../3 - Content/Forms/gracias_pirines.php" method="post" id="reservas" name="reservas" target="_self" onsubmit="return validar(this)">
+  <input type="hidden" id="id_etapa" name="id_etapa" value="1" />
+  <p>
+    <label for="data_primera_noche_TXT">Indica primera noche: </label>
+    <input type="text" id="data_primera_noche_TXT" name="data_primera_noche_TXT" value="" size="9"/>
+  </p>
+  <img src="images/rayita_formulario.gif" alt="raya" />
+  <p>
+    <label for="guia_INT">Itinerario con Gu&iacute;a (180&euro; d&iacute;a): </label>
+    <input type="radio" id="guia_INT" name="guia_INT" value="1"/>
+    S&iacute;
+    <input type="radio" id="guia_INT" name="guia_INT" value="0"/>
+    No</p>
+  <img src="images/rayita_formulario.gif" alt="raya" />
+  <p>
+    <label for="num_ciclistas_INT">N&uacute;mero de ciclistas:</label>
+    <input type="text" id="num_ciclistas_INT" name="num_ciclistas_INT" value="0" size="5" />
+  </p>
+  <img src="images/rayita_formulario.gif" alt="raya" />
+  <p class="club">
+    <label for="club_INT">¿Perteneces a alg&uacute;n club?: </label>
+    <input type="radio" id="club_INT" name="club_INT" value="1" />
+    S&iacute;
+    <input type="radio" id="club_INT" name="club_INT" value="0" />
+    No <br />
+    <label for="nombre_club_TXT">¿Cu&aacute;l?: </label>
+    <input type="text" id="nombre_club_TXT" name="nombre_club_TXT"/>
+  </p>
+  <img src="images/rayita_formulario.gif" alt="raya" />
+  <p>
+    <label for="seguro_INT">¿Deseas contratar alg&uacute;n seguro adicional?:</label>
+    <input type="radio" id="seguro_INT" name="seguro_INT" value="1" />
+    S&iacute;
+    <input type="radio" id="seguro_INT" name="seguro_INT" value="0" />
+    No </p>
+  <img src="images/rayita_formulario.gif" alt="raya" />
+  <p>
+    <label for="num_etapas_INT">N&uacute;mero de etapas: </label>
+    <input type="text" id="num_etapas_INT" name="num_etapas_INT" value="3" size="5"/>
+  </p>
+  <img src="images/rayita_formulario.gif" alt="raya" />
+  <p>
+    <label for="observaciones_TXT">Ind&iacute;canos tus preferencias, observaciones, comentarios, otros...</label>
+  </p>
+  <textarea id="observaciones_TXT" name="observaciones_TXT" rows=2 cols=30></textarea>
+  <img src="images/rayita_formulario.gif" alt="raya" />
+  <div>
+    <table class="form_table">
+      <tr>
+        <td><label id="label_nombre" for="nombre_TXT">Nombre: </label>
+          <input type="text" id="nombre_TXT" name="nombre_TXT" value="" size="16"/></td>
+        <td width="30"><label for="apellidos_TXT">Apellidos: </label></td>
+        <td><input type="text" id="apellidos_TXT" name="apellidos_TXT" value="" size="16"/></td>
+      </tr>
+      <tr>
+        <td><label for="dni_TXT">DNI: </label>
+          <input type="text" id="dni_TXT" name="dni_TXT" value="" /></td>
+        <td><label for="direccion_TXT">Direcci&oacute;n: </label></td>
+        <td><input type="text" id="direccion_TXT" name="direccion_TXT" value="" /></td>
+      </tr>
+      <tr>
+        <td><label for="cp_TXT">C.P.: </label>
+          <input type="text" id="cp_TXT" name="cp_TXT" value="" /></td>
+        <td><label for="localidad_TXT">Poblaci&oacute;n: </label></td>
+        <td><input type="text" id="localidad_TXT" name="localidad_TXT" value="" /></td>
+      </tr>
+      <tr>
+        <td><label for="telefono_TXT">Tel&eacute;fono: </label>
+          <input type="text" id="telefono_TXT" name="telefono_TXT" value="" /></td>
+        <td><label for="mail_TXT">email: </label></td>
+        <td><input type="text" id="mail_TXT" name="mail_TXT" value="" /></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="condiciones"><a onclick="javascript:;" href="#" >Condiciones generales y pol&iacute;tica de privacidad</a></td>
+      </tr>
+      <tr>
+        <td colspan="2"><label for="condiciones">He le&iacute;do y acepto las condiciones</label>
+          <input type="checkbox" tabindex="11" id="condiciones" name="conditions"/></td>
+        <td class="enviar"><input type="image" src="../../3 - Content/Forms/images/enviar_button.gif" value="ENVIAR"/></td>
+      </tr>
+    </table>
+  </div>
+</form>
+</body>
+</html>

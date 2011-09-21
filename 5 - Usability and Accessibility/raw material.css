@@ -1,0 +1,9 @@
+body {
+	
+}
+
+/* REalza inputs */
+input:focus { border: 2px solid #972324; }
+
+/* botones	*/
+input[type="button"] { cursor: pointer; }

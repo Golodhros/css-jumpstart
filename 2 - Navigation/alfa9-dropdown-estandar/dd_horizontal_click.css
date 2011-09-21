@@ -1,0 +1,137 @@
+
+/*****************************************************
+	- Autor: Marcos Iglesias
+	- Fecha: 17-12-2009	
+	- Referencias:	Craig Erskine, desde http://qrayg.com/experiment/cssmenus/#
+	- Proyecto: Librería Estándard Alfa9
+	- Función: Dynamic Menu System - Horizontal con Click y Animación
+*****************************************************/
+
+/*	Reset -	A Eliminar	*/
+	* { margin: 0; padding: 0; font-size: 100%; }
+
+/*	Menu	*/
+	#navmenu-c { 
+		margin: 0; 
+		list-style: none; 
+		position: relative; 
+		padding: 0 20px;
+		float: left;
+		width: 920px;
+	}
+		#navmenu-c ul { 
+			width: 160px; /* Sub Menu Width */ 
+			margin: 0; 
+			list-style: none; 
+			display: none; 
+			position: absolute; 
+			top: 100%; 
+			left: 0; 
+			top: 35px;
+			padding: 0;
+			float: left;
+		}
+		#navmenu-c li { 
+			float: left; 
+			display: inline; 
+			position: relative;
+			/*padding: 0 15px 0 0; */
+		}
+			#navmenu-c li span { /*--Drop down trigger styles--*/
+				width: 17px;
+				height: 35px;
+				float: left;
+				background: url(subnav_btn.gif) no-repeat center top;	/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+			}
+			#navmenu-c li span.subhover {
+				background-position: center bottom;
+				cursor: pointer;
+			}  /*--Hover effect for trigger--*/
+			
+		#navmenu-c a { 
+			border-top: 1px solid #FFF; 			/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+			border-right: 1px solid #FFF; 			/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+			padding: 10px 5px;
+			float: left; 
+			display: block; 
+			background: #DDD; 						/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+			color: #666; 							/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+			font: bold 11px Arial, sans-serif; 		/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+			text-decoration: none; 
+			height: 1%; 
+		} /* Root Menu Hover Persistence */
+		
+	#navmenu-c ul ul,
+	#navmenu-c ul ul ul { 
+		top: 0; 
+		left: 100%; 
+		}
+	#navmenu-c ul li { 
+		display: block; 	
+		clear: both;
+		width: 160px;
+		} /* Root Menu */
+	 
+	#navmenu-c a:hover,
+	#navmenu-c li:hover a,
+	#navmenu-c li.iehover a { 
+		background: #BBB; 							/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		color: #FFF; 								/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 2nd Menu */ 
+		
+	#navmenu-c li:hover li a,
+	#navmenu-c li.iehover li a { 
+		float: none; 
+		background: #BBB; 							/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 2nd Menu Hover Persistence */ 
+		
+	#navmenu-c li:hover li a:hover,
+	#navmenu-c li:hover li:hover a,
+	#navmenu-c li.iehover li a:hover,
+	#navmenu-c li.iehover li.iehover a { 
+		background: #999; 							/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 3rd Menu */ 
+		
+	#navmenu-c li:hover li:hover li a,
+	#navmenu-c li.iehover li.iehover li a { 
+		background: #999; 							/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 3rd Menu Hover Persistence */
+		 
+	#navmenu-c li:hover li:hover li a:hover,
+	#navmenu-c li:hover li:hover li:hover a,
+	#navmenu-c li.iehover li.iehover li a:hover,
+	#navmenu-c li.iehover li.iehover li.iehover a { 
+		background: #666; 							/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 4th Menu */ 
+		
+	#navmenu-c li:hover li:hover li:hover li a,
+	#navmenu-c li.iehover li.iehover li.iehover li a { 
+		background: #666; 							/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* 4th Menu Hover */ 
+		
+	#navmenu-c li:hover li:hover li:hover li a:hover,
+	#navmenu-c li.iehover li.iehover li.iehover li a:hover { 
+		background: #333; 							/*Estilo de Ejemplo - A Eliminar o Cambiar*/
+		} /* Hover Function - Do Not Move */
+		 
+	#navmenu-c li:hover ul ul,
+	#navmenu-c li:hover ul ul ul,
+	#navmenu-c li.iehover ul ul,
+	#navmenu-c li.iehover ul ul ul { 
+		display: none; 
+		}
+	
+	#navmenu-c ul li:hover ul,
+	#navmenu-c ul ul li:hover ul,
+	#navmenu-c ul li.iehover ul,
+	#navmenu-c ul ul li.iehover ul { 
+		display: block; 
+		}
+	
+	html #navmenu-c li ul li a {
+		float: left;
+		width: 139px;
+		padding-left: 15px;
+	}/*Important for keeping elements wide open with the animation*/
+
+		

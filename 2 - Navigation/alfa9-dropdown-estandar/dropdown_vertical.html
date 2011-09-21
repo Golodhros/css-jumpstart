@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Dropdown Vertical</title>
+	<link rel="stylesheet" href="dd_vertical.css" type="text/css" media="screen" />
+	<script type="text/javascript"	src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+		//Hacks para IE6 eIE7 - Script com�n para los tres tipos de Men� 
+		$(document).ready(function(){ 
+			$("#navmenu-h li,#navmenu-v li")
+			.hover( function() { 
+				$(this).addClass("iehover"); 
+			}, function() { 
+				$(this).removeClass("iehover"); 
+			} ); 
+		});
+	</script>
+</head>
+<body>
+<!-- Los distintos men�s se crean con: Horizontal->#navmenu-h Vertical->#navmenu-v Horizontal con Click->#navmenu-c -->
+<ul id="navmenu-v">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Work +</a>
+		<ul>
+			<li><a href="#">Websites +</a>
+				<ul>
+					<li><a href="#">qrayg.com</a></li>
+					<li><a href="#">craigerskine.com</a></li>
+					<li><a href="#">dt.qrayg.com</a></li>
+					<li><a href="#">legendofmana.info</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Sketchbook</a></li>
+			<li><a href="#">Free Interfaces</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Learn +</a>
+		<ul>
+			<li><a href="#">Fireworks +</a>
+				<ul>
+					<li><a href="#">Aqua Button</a></li>
+					<li><a href="#">Aqua Button 2</a></li>
+					<li><a href="#">Water Drop</a></li>
+					<li><a href="#">Light FX</a></li>
+					<li><a href="#">Light FX2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">CSS +</a>
+				<ul>
+					<li><a href="#">CSS Menus</a></li>
+					<li><a href="#">Sprite Nav</a></li>
+					<li><a href="#">@import</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="#">Contact</a></li>
+</ul>
+
+
+
+
+</body>
+</html>

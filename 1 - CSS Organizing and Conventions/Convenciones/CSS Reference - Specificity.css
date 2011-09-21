@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* Specificity and The Cascade*/
+/*	Jerarquía de selectores, de menor a mayor peso:
+
+/* Universal Selectors */
+/* Element Selectors */
+/* Class, Attribute, and Pseudo Selectors */
+/* ID Selectors */
+/*	Inline Styles	*/
+
+/* !important Universal Selectors */
+/* !important Element Selectors */
+/* !important Class, Attribute, and Pseudo Selectors */
+/* !important ID Selectors */
+/* !important Inline Styles */
+
+/* Selectors:		
+
+* {} selects all elements
+p {} selects all <p> elements
+*.c {} selects all elements where class="c"
+p.c {} selects all <p> elements where class="c"
+#main {} selects one element where id ="main"
+a:link {} selects all unvisited links
+a:visited{} selects all visited links
+a:hover {} selects all links being hovered over
+a:active {} selects the current link being activated
+a:focus {} selects all links that have the focus
+p:first-letter {} selects first letter of all <p> elements
+p:first-line {} selects first line of all <p> elements
+p:first-child {} selects first child of all <p> elements
+#n *.c :first-line {} descendant selector example
+#n > *.c > :first-line {} child selector example
+#n + *.c + :first-line {} sibling selector example
+#n , *.c , :first-line {} applies independent selectors to same block of properties
+*[title] {} selects all elements with a title attribute.
+*[title~="WORD"] {} selects all where title attribute contains "WORD".
+*[title="EXACT_MATCH_OF_ENTIRE_VALUE"] {} selects all with exact attribute match.
+

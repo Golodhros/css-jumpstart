@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin t&iacute;tulo</title>
+<style type="text/css">
+/* Define default values for the whole site */
+	body {
+			text-align: center;
+	}
+	
+/* Container for centering horizontally*/
+	#mod_horizontal_center {
+			width: 400px;
+			margin: 10px auto 10px auto;
+			padding: 20px; 
+			border: 1px solid #000;
+			background: #CCC;
+			text-align: left;
+	}
+
+/* Vertical Centering*/
+/*	Method 1	*/
+	#mod_vertical_center_1{
+			position: relative;
+			height: 400px;
+			width: 400px;
+			margin: 10px auto 10px auto;
+			border: 1px solid #000000;
+	}
+			#mod_vertical_center_1 .bd .centered {
+					background-color:#00CC33;
+					position: absolute;       
+					left: 0;       
+					top: 50%;  
+					margin: -100px auto 0 auto; /* half of div's height */  
+					height: 200px;
+			}
+/*	Pros: all browsers, doesn't require nested tags
+	Contras: When there isn't enough space, the container disappears
+*/
+
+/*	Method 2	*/
+	#mod_vertical_center_2{
+			height: 400px;
+			width: 400px;
+			margin: 10px auto;
+			border: 1px solid #000000;
+	}
+			#mod_vertical_center_2 .hd{
+					position: relative; float: left;
+					height: 50%;
+					margin-bottom: -100px;
+					width: 1px;
+			}
+			#mod_vertical_center_2 .bd{
+					position: relative; clear: left;
+					height: 200px;	width: 80%; max-width: 400px;	min-width: 200px;
+					margin: 0 auto;
+					background-color: #00CC33;
+			}
+/*	Pros: all browsers, When there isn�t enough space (ie. the window shrinks) our content will not be cut off, and a scrollbar will appear.
+	Contras: Only one I can think of is that it requires an extra empty element (which isn�t that bad, another subjective topic)
+*/
+
+/*	Method 3	*/
+	#mod_vertical_center_3{
+			height: 400px;
+			width: 400px;
+			margin: 10px auto 10px auto;
+			border: 1px solid #000000;
+			line-height: 400px;
+	}
+
+/*	Pros: all browsers, Doesn�t get cut off when the isn�t enough space
+	Contras: Only works on text (no block elements), When there is more than a single line (like when it wraps), it breaks badly
+*/
+
+/*	Aux Styles	*/
+	.box {
+			border: 1px solid #000000;
+	}
+	
+</style>
+</head>
+
+<body>
+<!--	Horizontal Centering	-->
+<div id="mod_horizontal_center">
+	<div class="hd">
+	</div>
+	<div class="bd">
+		<div class="box">
+			<p>I'm in a box!</p>
+		</div>
+		<div class="box">
+			<p>I'm also in a box!</p>
+		</div>
+	</div>	
+</div>
+<!--	EOF Horizontal Centering	-->
+
+<!--	Vertical Centering	-->
+
+<div id="mod_vertical_center_1">
+	<div class="hd">
+	</div>
+	<div class="bd">
+		<div class="centered">YEahh!!</div>
+	</div>	
+</div>
+
+<div id="mod_vertical_center_2">
+	<div class="hd">	</div>
+	<div class="bd">
+		<div class="centered">YEahh!!</div>
+	</div>	
+</div>
+
+<div id="mod_vertical_center_3">
+	<div class="hd">	</div>
+	<div class="bd">
+		<div class="centered">YEahh!!</div>
+	</div>	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

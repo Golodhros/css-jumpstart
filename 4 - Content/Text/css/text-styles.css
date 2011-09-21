@@ -1,0 +1,150 @@
+@CHARSET "ISO-8859-1";
+
+/*****************************************************
+	- Autor: Marcos Iglesias
+	- Fecha: 19-1-2009	
+	- Referencias:	
+	- Proyecto: Alfa9 - Jordá Ascensores 
+	- Función: Definición de estilo de texto para el proyecto 
+*****************************************************/
+ 
+ /*	Colores:
+  *	Cabeceras------------------------
+  *	h2 
+  *	h3 
+  * h4 
+  * h5 
+  * h6 
+  *
+  * Textos auxiliares----------------
+  *	
+  *
+  * Enlaces--------------------------
+  * link-: #cdcbcb
+  *
+  * Párrafos-------------------------
+  * p: #4a4a4a
+  * 
+  *	Footer---------------------------
+  *
+  *
+  * Sub-Header-----------------------
+  * 
+  * A-side---------------------------
+  * 
+  */
+  
+	body{
+		font-family: ;
+		font-size:62.5%;
+	}
+/*	---------	Text Styling	-----------------------------*/	
+
+	strong{
+		font-weight: 800;
+	}
+  
+/*	---------	Headings	-----------------------------*/
+
+	h1{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}  
+	h2{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+	h3{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}  
+	h4{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+	h5{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+	h6{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+
+/*	---------	Textos Auxiliares	-----------------------------*/
+	
+	.info-{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+	.-area{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+	
+/*	---------	Párrafo	-----------------------------*/	
+	
+	p{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	} 
+
+/*	---------	Footer	-----------------------------*/
+
+	.ft-{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+ 
+/*	---------	Enlaces	-----------------------------*/
+	
+	.link-{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+	.link-{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+	.link-{
+		color:;
+		font-size:;
+		font-weight:;
+		letter-spacing:;
+	}
+	 
+/*	---------	Link States	-----------------------------*/ 
+
+	.active{
+		text-decoration: underline;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+
+
+	

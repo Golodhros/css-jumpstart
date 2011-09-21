@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks 
+RewriteEngine	On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^frontoffice/register_elogia\.php$ /frontoffice/register_elogia [R,L]
+RewriteRule ^frontoffice/register_webranking\.php$ /frontoffice/register_webranking [R,L]
+RewriteRule ^mailing\/([0-9]+)\/img\/campaigns\.jpg$ /front/get/img/mailing_$1_img_campaigns.jpg [R,L]
+RewriteRule ^mailing\/([0-9]+)\/img\/e-mail_diario_banner_IT\.jpg$ /front/get/img/mailing_$1_img_e-mail_diario_banner_IT.jpg [R,L]
+RewriteRule ^front\/get\/img\/mailing_(.*) /front/get/mailingimg/$1 [R,L]
+RewriteRule !^((akamai.*)|(signature.*)|(.+\.(xml|exe|hqx|html)))$ index.php?route=$1  [L,QSA]
+RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
+RewriteRule . %1/%2 [R=301,L]
+</IfModule>
+#<IfModule mod_headers.c>
+##   Header set Expires "Thu, 11 Jun 2010 12:00:00 GMT"
+#</IfModule>
+
+# INICIO Directivas para fecha de expiracion  
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault A86400
+ExpiresByType image/x-icon A2592000
+ExpiresByType application/x-javascript A2592000
+ExpiresByType text/css A2592000
+ExpiresByType image/gif A604800
+ExpiresByType image/png A604800
+ExpiresByType image/jpeg A604800
+ExpiresByType image/jpg A604800
+ExpiresByType text/plain A604800
+ExpiresByType application/x-shockwave-flash A604800
+ExpiresByType video/x-flv A604800
+ExpiresByType application/pdf A604800
+ExpiresByType text/html A900
+ExpiresByType text/javascript A900
+</IfModule>
+# FIN Directivas para fecha de expiracion
+

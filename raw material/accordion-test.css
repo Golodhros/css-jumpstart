@@ -1,0 +1,74 @@
+/* Support - Accordion
+---------------------------------------------------------------- */
+
+.accordion .container{background:transparent url(/front/get/img/bkg-profile-accordion.gif) no-repeat left top;color:#fff;cursor:pointer;font-family:Tahoma;font-size:14px;font-weight:700;text-decoration:none;width:auto;width:auto;}
+
+.accordion .container .ico-accordion				{background:transparent url(/front/get/img/spr-privalia.png) no-repeat -535px -120px ;	width: 10px; height: 10px ; display: block; float: left; margin-right: 10px;}
+.accordion .accordion-toggle-active .container .ico-accordion				{background-position: -545px -120px ;}
+.accordion .container {height:17px;padding:8px;display: block; position: relative;}
+
+.accordion .ico-banner{background:transparent url(/front/get/img/spr-privalia.png) no-repeat; width: 40px; height: 40px; display: block; position: absolute; right: 10px; top:0}
+.accordion .ico-banner.invite{background-position: -30px -650px; }
+.accordion .ico-banner.info{background-position: -30px -1900px; }
+
+.pag-myaccount .accordion .accordion-toggle 	{display:block; height: 38px;cursor:pointer; padding: 1px}
+
+.pag-myaccount .accordion .accordion-content {margin-top: -10px; }
+.pag-myaccount .accordion .accordion-content .mid {padding:10px;height: auto; background-color: #252525}
+
+/* Product - Accordion
+---------------------------------------------------------------- */
+
+/*	Textos	*/
+.accordion .product-info-module span a{
+	 color:#acacac;
+	 cursor:pointer;
+	 font-family:Tahoma;font-size:12px;
+	 font-weight:700;
+	 text-decoration:none;
+	 width:auto;
+	 text-decoration: underline;
+	 }
+	.accordion .product-info-module .active span a{
+		 color:#fff;
+		 }
+
+.accordion .product-info-module .accordion-toggle 	{
+	display:block; 
+	height: 30px; 
+	cursor:pointer; 
+	padding:0 0 0 10px; 
+	margin: 0;
+	}
+	
+/*	Important 3 para los elementos no activos */	
+.accordion .product-info-module .accordion-toggle 	{
+	background:url("/front/get/img/spr-boxes.gif") no-repeat scroll 0 0 transparent;
+	text-align:left;
+	width:auto;
+	line-height:30px;
+	padding-left:10px;
+	background-position:left -250px;
+	}
+	.accordion .product-info-module .accordion-toggle span {
+		background:url("/front/get/img/spr-boxes.gif") no-repeat scroll 0 0 transparent;
+		background-position:right -250px;
+		display:block;
+		padding-right:10px;
+		position:relative;
+		text-align:left;
+		width:auto;
+	}
+
+/* Important 6 para el elemento activo */
+.accordion .product-info-module .active	{	background:url("/front/get/img/spr-boxes.gif") no-repeat scroll 0 0 transparent;	background-position:left -370px;}
+	.accordion .product-info-module .active span {		background-position:right -370px;padding-right:10px;	}
+
+/*	Parrafos texto	*/
+.accordion .product-info-module .accordion-content p {padding: 10px; font-size: 11px;}
+.accordion .product-info-module .accordion-content .omega p {padding-left: 0px;}/* a comprobar */
+
+/*	Botones desplegable	*/
+.accordion .product-info-module .open-close-btn {	display:block;	height:11px;	position:absolute;	right:10px;	top:10px;	width:11px; background: transparent url(/front/get/img/spr-privalia.png) -534px -121px;	}
+	.accordion .product-info-module .active .open-close-btn {background-position:-545px -122px;}
+

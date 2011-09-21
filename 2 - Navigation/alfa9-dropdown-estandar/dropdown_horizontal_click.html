@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Dropdown Horizontal</title>
+	<link rel="stylesheet" href="dd_horizontal_click.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript"> 
+		//Hacks para IE6 eIE7 - Script com�n para los tres tipos de Men�
+		$(document).ready(function(){ 
+			$("#navmenu-h li,#navmenu-v li,#navmenu-c li")
+			.hover( function() { 
+				$(this).addClass("iehover"); 
+			}, function() { 
+				$(this).removeClass("iehover"); 
+			} ); 
+		});
+	</script>
+	<script type="text/javascript">
+	 	//Funcionalidad del click y la animaci�n del men� - Exclusivo para el men� con click
+		$(document).ready(function(){
+			//Buscamos aquellos elementos del men� que contengan un submenu y les a�adimos el span con la flecha para abrirlos
+			$("#navmenu-c li ul").not("#navmenu-c li ul li ul").parent().append("<span></span>"); 
+			
+			$("#navmenu-c li span").click(function() { //Cuando pulsamos la flecha...
+				$(this).parent().find("ul:first").addClass("submenu");
+	
+				//Animamos el submen� hacia arriba o abajo
+				$(this).parent().find("ul.submenu").slideDown('fast').show(); //Drop down the subnav on click
+				$(this).parent().hover(function() {
+				}, function(){	
+					$(this).parent().find("ul.submenu").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+				});
+		
+				//Este es el efecto hover de la flecha
+				}).hover(function() { 
+					$(this).addClass("subhover"); //On hover over, add class "subhover"
+				}, function(){	//On Hover Out
+					$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<ul id="navmenu-c">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Work</a>
+		<ul>
+			<li><a href="#">Websites +</a>
+			<ul>
+				<li><a href="#">qrayg.com</a></li>
+				<li><a href="#">craigerskine.com</a></li>
+				<li><a href="#">dt.qrayg.com</a></li>
+				<li><a href="#">legendofmana.info</a></li>
+			</ul>
+			</li>
+			<li><a href="#">Sketchbook</a></li>
+			<li><a href="#">Free Interfaces</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Learn</a>
+		<ul>
+			<li><a href="#">Fireworks +</a>
+				<ul>
+					<li><a href="#">Aqua Button</a></li>
+					<li><a href="#">Aqua Button 2</a></li>
+					<li><a href="#">Water Drop</a></li>
+					<li><a href="#">Light FX</a></li>
+					<li><a href="#">Light FX2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">CSS +</a>
+				<ul>
+					<li><a href="#">CSS Menus</a></li>
+					<li><a href="#">Sprite Nav</a></li>
+					<li><a href="#">@import</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="#">Contact</a></li>
+</ul>
+
+</body>
+</html>
