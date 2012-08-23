@@ -1,0 +1,43 @@
+/**
+ * 	Yogiplay Media Queries
+ */
+
+/*	---------------------------------------------
+ 	Mobile*/
+@media only screen and (max-width : 476px){
+	.firsttimer-container {background-color: orange;}
+}
+
+/* Small Tablets */
+@media only screen and (min-width : 477px) and (max-width : 590px){
+	.firsttimer-container {background-color: yellow;}
+}
+/*	Mobile Landscape */
+@media only screen and (min-width : 321px) and (max-width : 590px)	and (orientation:landscape) {
+	.firsttimer-container {background-color: white;}
+}
+
+/*	---------------------------------------------
+ 	Medium Tablets: Nook & Kindle*/
+@media only screen and (min-width : 591px) and (max-width : 765px){
+	.firsttimer-container {background-color: green;}
+}
+/*	Big Mobile Landscape */
+@media only screen and (min-width : 591px) and (max-width : 765px) and (orientation:landscape) {
+	.firsttimer-container {background-color: black;}
+}
+
+/*	---------------------------------------------
+ 	Big Tablets: iPad, Zoom...*/
+@media only screen and (min-width : 766px) {
+	.firsttimer-container  {background-color: red;}	
+}
+/*	Tablets Landscape (iPad, Zoom, Nook & Kindle)	*/
+@media only screen and (min-width : 766px) and (orientation : landscape){
+	.firsttimer-container  {background-color: gray ;}	
+}
+
+/*	---------------------------------------------
+ 	Desktop*/
+@media only screen and (min-width : 1025px){
+}

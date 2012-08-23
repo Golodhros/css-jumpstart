@@ -1,0 +1,63 @@
+/*
+ * TODO: Improve this
+ */
+	.cta{ 
+		width: auto;
+		margin: 0.5em 0;
+		display: block;
+		font-size: 0.85em;
+		font-weight: bold; 
+		border: 1px solid;
+		text-decoration: none; 
+		-webkit-box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+		box-shadow: 0px 1px 4px /*{global-box-shadow-size}*/ rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+	}
+		.cta span{
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			text-align: center;
+			position: relative;
+			display: block;
+			padding: 10px 20px;
+		} 
+		.orange{
+			-webkit-box-shadow: 0 0 15px /*{global-box-shadow-size}*/ #e8e8e8 /*{global-box-shadow-color}*/;
+			box-shadow: 		0 0 15px /*{global-box-shadow-size}*/ #e8e8e8 /*{global-box-shadow-color}*/; 
+			 color: #FFFFFF; border-color: #000000; background-color: #F25C14;
+		}
+			.orange:hover{ 
+				background-image: -webkit-gradient(linear, left top, left bottom, from( #f6f6f6 /*{a-bhover-background-start}*/), to( #e0e0e0 /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
+				background-image: -webkit-linear-gradient( #f6f6f6 /*{a-bhover-background-start}*/, #e0e0e0 /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+				background-image:     -ms-linear-gradient( #f6f6f6 /*{a-bhover-background-start}*/, #e0e0e0 /*{a-bhover-background-end}*/); /* IE10 */
+				background-image:      -o-linear-gradient( #f6f6f6 /*{a-bhover-background-start}*/, #e0e0e0 /*{a-bhover-background-end}*/); /* Opera 11.10+ */
+				background-image:         linear-gradient( #f6f6f6 /*{a-bhover-background-start}*/, #e0e0e0 /*{a-bhover-background-end}*/);
+				color: #F25C14; 
+				border-color: #BBBBBB; 
+				background: #dfdfdf;
+			}
+		.green{
+			-webkit-box-shadow: 0 0 15px /*{global-box-shadow-size}*/ #0ea15b /*{global-box-shadow-color}*/;
+			box-shadow: 		0 0 15px /*{global-box-shadow-size}*/ #0ea15b /*{global-box-shadow-color}*/; 
+			 color: #FFFFFF; border-color: #000000; background-color: #0ea15b;
+		}
+			.green:hover{ 
+				background-image: -webkit-gradient(linear, left top, left bottom, from( #f6f6f6 /*{a-bhover-background-start}*/), to( #e0e0e0 /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
+				background-image: -webkit-linear-gradient( #f6f6f6 /*{a-bhover-background-start}*/, #e0e0e0 /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+				background-image:     -ms-linear-gradient( #f6f6f6 /*{a-bhover-background-start}*/, #e0e0e0 /*{a-bhover-background-end}*/); /* IE10 */
+				background-image:      -o-linear-gradient( #f6f6f6 /*{a-bhover-background-start}*/, #e0e0e0 /*{a-bhover-background-end}*/); /* Opera 11.10+ */
+				background-image:         linear-gradient( #f6f6f6 /*{a-bhover-background-start}*/, #e0e0e0 /*{a-bhover-background-end}*/);
+				color: #0ea15b; 
+				border-color: #BBBBBB; 
+				background: #dfdfdf;
+			}
+		.grey{color: #2F3E46; border-color: #FFFFFF; background-color: #BBBBBB;}
+			.grey:hover{
+				background-image: -webkit-gradient(linear, left top, left bottom, from( #f6f6f6 /*{c-bhover-background-start}*/), to( #e0e0e0 /*{c-bhover-background-end}*/)); /* Saf4+, Chrome */
+				background-image: -webkit-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+				background-image:     -ms-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* IE10 */
+				background-image:      -o-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* Opera 11.10+ */
+				background-image:         linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/);
+				color: #2F3E46; 
+				border-color: #BBBBBB; 
+				background: #dfdfdf ;
+			}

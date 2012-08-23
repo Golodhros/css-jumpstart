@@ -1,0 +1,6 @@
+#popup{position:absolute;top:50%; left:50%;height: 350px; width:399px;margin-left:-200px; margin-top: -1em;z-index:99;color:#fff !important;}
+.error{color:#fff}
+.head{background-color:#02315d;border-bottom: 10px #000 solid;-moz-border-radius: 7px;-webkit-border-radius: 7px;border-radius: 7px;}
+html, body{background-color:#fdbf2c;}
+.page{background-color:#fff;-moz-border-radius: 7px;-webkit-border-radius: 7px;border-radius: 7px;}
+.foot{background-color:#02315d; color:#fff; text-align:center;border-bottom: 1px #000 solid;border-top: 1px #000 solid;}

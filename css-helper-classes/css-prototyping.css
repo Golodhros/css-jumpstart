@@ -1,0 +1,91 @@
+/* ---------------------------------------------------------
+ *  Prototyping Classes 
+ */
+
+/*	Margins	*/
+.mar0		{ margin: 0 !important;}
+.mar05		{ margin: 0.5em !important;}
+.mar1		{ margin: 1em !important;}
+.mar15		{ margin: 1.5em !important;}
+
+.martop0 	{ margin-top: 0 !important;}
+.martop05 	{ margin-top: 0.5em !important;}
+.martop1 	{ margin-top: 1em !important;}
+.martop15 	{ margin-top: 1.5em !important;}
+
+.marbot0 	{ margin-bottom: 0 !important;}
+.marbot05 	{ margin-bottom: 0.5em !important;}
+.marbot1 	{ margin-bottom: 1em !important;}
+.marbot15 	{ margin-bottom: 1.5em !important;}
+
+/*	Paddings	*/
+.pad0		{ padding: 0 !important;}
+.pad05		{ padding: 0.5em !important;}
+.pad1		{ padding: 1em !important;}
+.pad15		{ padding: 1.5em !important;}
+
+.padtop0	{ padding-top: 0 !important;}
+.padtop05	{ padding-top: 0.5em !important;}
+.padtop1	{ padding-top: 1em !important;}
+.padtop15	{ padding-top: 1.5em !important;}
+
+.padbot0	{ padding-bottom: 0 !important;}
+.padbot05	{ padding-bottom: 0.5em !important;}
+.padbot1	{ padding-bottom: 1em !important;}
+.padbot15	{ padding-bottom: 1.5em !important;}
+
+/*	Positioning Classes 	*/
+.l-block	{display: block !important;}
+.l-iblock	{display: inline-block !important;}
+.l-inline	{display: inline !important;}
+
+.l-right	{float:right;}
+.l-left		{float:left;}
+.l-center	{margin: 0 auto !important;}
+
+/*	Font related 	*/
+.left-aligned	{text-align: left;}
+.right-aligned	{text-align: right;}
+.center-aligned	{text-align: center;}
+
+/*	Rounded Corners	*/
+.s-rounded-corners{
+	-webkit-border-radius: .5em; 
+	   -moz-border-radius: .5em; 
+			border-radius: .5em;
+}
+.m-rounded-corners{
+	-webkit-border-radius: 0.625em; 
+	   -moz-border-radius: 0.625em; 
+			border-radius: 0.625em;
+}
+.l-rounded-corners{
+	-webkit-border-radius: 1.25em; 
+	   -moz-border-radius: 1.25em; 
+			border-radius: 1.25em;
+}
+.xl-rounded-corners{
+	-webkit-border-radius: 2em; 
+	   -moz-border-radius: 2em; 
+			border-radius: 2em;
+}
+.no-top-left-corner{
+	-webkit-border-top-left-radius: 0;
+	   -moz-border-top-left-radius: 0; 
+			border-top-left-radius: 0;
+}
+.no-top-right-corner{
+	-webkit-border-top-right-radius: 0;
+	   -moz-border-top-right-radius: 0; 
+			border-top-right-radius: 0;
+}
+.no-bottom-right-corner{
+	-webkit-border-bottom-right-radius: 0;
+	   -moz-border-bottom-right-radius: 0; 
+			border-bottom-right-radius: 0;
+}
+.no-bottom-left-corner{
+	-webkit-border-bottom-left-radius: 0;
+	   -moz-border-bottom-left-radius: 0; 
+			border-bottom-left-radius: 0;
+}

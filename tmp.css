@@ -1,0 +1,261 @@
+section {
+	padding: 1.5em;
+	padding-top: 1.5em;
+	-moz-box-shadow: 0px 1px 2px #ccc;
+	-webkit-box-shadow: 0px 1px 2px #ccc;
+	box-shadow: 0px 1px 2px #ccc;
+	/*background: url(/parent/dashboard/img/new/section_bg2.jpg) repeat #fafafa;*/
+	background: #fafafa;
+	position: relative;
+	top: -1em;
+	z-index: 0;
+}
+#s_discover p {
+	margin-bottom: 2em;
+}
+/*********************/
+/* DISCOVER BAR */
+.sub_navigation {
+	padding: 0.5em;
+	padding-top: 1.5em;
+	-moz-box-shadow: 0px 1px 1px #ccc;
+	-webkit-box-shadow: 0px 1px 1px #ccc;
+	box-shadow: 0px 1px 1px #ccc;
+	background: #fafafa;
+	position: relative;
+	top: -1em;
+	z-index: 5;
+	text-align: center;
+}
+#skillset_selection {
+	margin: 0 2em;
+}
+	#skillset_selection:focus{ 
+		-webkit-box-shadow: 0 0 15px #FF8800; -moz-box-shadow: 0 0 15px #FF8800; box-shadow: 0 0 15px #FF8800;
+		border: 1px solid #f25c14;
+		outline: auto 3px -webkit-focus-ring-color; /* override Safari focus field outline */
+	}
+#skillset_icon {
+	cursor: pointer;
+	width: 2.5em;
+	margin-right: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-moz-box-shadow: 1px 1px 2px #bbb;
+	-webkit-box-shadow: 1px 1px 2px #bbb;
+	box-shadow: 1px 1px 2px #bbb;
+	vertical-align: middle;
+}
+/*********************/
+/* RECOMMENDED APPS */
+#recommended_apps {
+	overflow: hidden;
+	text-align: center;
+	height: 31.4em;
+	width: 100%;
+}
+	#recommended_apps li {
+		display: block;
+		width: 20%;
+		padding: 0em 2.5% 2em 2.5%;
+		position: relative;
+		float: left;
+		height: 8.5em;
+		margin: 0;
+		cursor:pointer;
+	}
+		#recommended_apps li .hidden {
+			display: none;
+		}
+		#recommended_apps li .icon_feature {
+			position: absolute;
+			z-index: 1;
+			top: -1.1em;
+			right: 0;
+		}
+		#recommended_apps li .price {
+			font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif ;
+			color: #000;
+			background: rgba(255,255,255,0.9);
+			border: solid 1px #ddd;
+			font-size: 0.8em;
+			padding: 0.2em 0.5em;
+			-moz-border-radius: 0.2em;
+			-webkit-border-radius: 0.2em;
+			border-radius: 0.2em;
+			display: inline-block;
+			z-index: 1;
+			position: absolute;
+			top: 5em;
+			right: 0;
+		}
+		#recommended_apps li .app_pic {
+			margin-bottom: 0em;
+			width: 112px;
+			height: 112px;
+			-moz-border-radius: 0.8em;
+			-webkit-border-radius: 0.8em;
+			border-radius: 0.8em;
+			box-shadow: 1px 1px 1px #999;
+		}
+		#recommended_apps li .title {
+			margin-bottom: 0em;
+			line-height: 1.2em;
+			text-transform: capitalize;
+			height: 1.2em;
+			font-size: 0.8em;
+			white-space: nowrap;
+		}
+		#recommended_apps li .more_info {
+			margin-top: 0.5em;
+		}
+#recommended_apps_control {
+	margin-bottom: 1em;
+}
+#about_educator {
+	margin-top: 4em;
+}
+	#about_educator p {
+		margin-bottom: 1em;
+		line-height: 1.4em;
+	}
+	#about_educator .price {
+		font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif ;
+		color: #000;
+		background: rgba(255,255,255,0.9);
+		border: solid 1px #ddd;
+		font-size: 0.8em;
+		padding: 0.2em 0.5em;
+		-moz-border-radius: 0.2em;
+		-webkit-border-radius: 0.2em;
+		border-radius: 0.2em;
+		display: inline-block;
+		margin-right: 0.3em;
+	}#discover #page_wrapper {
+	font-size: 0.85em;
+	max-width: 480px;
+}
+header {
+	min-height: 3em;
+}
+section {
+	padding: 1em;
+}
+#profile_pic {
+	float: left;
+	border: solid 1px #777;
+	margin-right: 0.5em;
+	width: 3em;
+	height: 3em;
+}
+#profile_age {
+	font-size: 0.8em;
+	margin-bottom: 0.8em;
+}
+#profile_coins {
+	font-size: 0.8em;
+}
+#profile_selection {
+	top: 1em;
+	right: 2em;
+}
+#profile_selection > li:nth-of-type(1), #profile_selection > li:nth-of-type(2) {
+	display: none;
+}
+#profile_selection > li[data-type="action"][data-more_1_children="true"] {
+	display: block;
+}
+#profile_selection > li[data-type="action"] {
+	font-size: 0.9em;
+}
+#profile_selection[data-expanded="true"] > li {
+	display: block;
+}
+#s_discover > p {
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+#discover_nav {
+	padding: 0.5em;
+	padding-top: 1.5em;
+}
+#discover_nav span {
+	display: none;
+}
+#recommended_apps {
+	height: 26.8em;
+}
+
+/* Former style with 2 elements per slide
+#recommended_apps > li {
+	width: 33%;
+	margin: 0 0 1em 0;
+	height: 8em;
+}
+*/
+#recommended_apps > li {
+	width: 28%;
+	margin: 0 0 1em 0;
+	height: 6.5em;
+}
+#recommended_apps > li:nth-of-type(3n+2) {
+	margin: 0em 0.5% 1em 0.5%;
+}
+#recommended_apps > li > p.price {
+	top: 4.8em;
+	right: 0.5em;
+}
+#recommended_apps > li > img.app_pic {
+	margin-bottom: 0.5em;
+	width: 4.5em;
+	height: 4.5em;
+}
+#recommended_apps > li > p.title {
+	font-size: 0.7em;
+}
+/* POPUP ************************/
+#popup_wrapper {
+	font-size: 0.8em;
+}
+#header_close {
+	top: -10px;
+	right: -25px;
+}
+#header_close img {
+	width: 70%;
+}
+.app_features .description p{ font-size: 0.75em;}
+
+/* PAGINATION ************************/
+div.pagination {
+	width: 60%;
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+	#yoginav a {padding: 1.2em 0.7em; font-size: 0.8em;}
+	#recommended_apps { height: 19.2em;}
+		#recommended_apps > li { height: 7em; width: 19%; }
+	#about_educator { margin-top: 2em;}
+	
+	#popup_wrapper { max-width: 430px; }
+}
+
+#discover #page_wrapper {width: 768px; margin: 0 auto; }
+#recommended_apps li { width: 20%; }
+#popup_wrapper { max-width: 690px; }
+
+/*	Landscape Fixing	*/
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1280px)
+and (orientation : landscape) {
+	#discover #page_wrapper { width: 1024px; }
+	#recommended_apps {height: 20.4em;}
+		#recommended_apps li {width: 11%;}
+		#popup_wrapper { max-width: 965px;}
+}
