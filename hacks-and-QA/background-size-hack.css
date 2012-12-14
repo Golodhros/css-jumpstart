@@ -1,0 +1,13 @@
+//	Selector with background-size
+.ruler{
+	height: 25px;
+	position: relative;
+	background: transparent url('/assets/img/bkg-meter-orange-x2.png') no-repeat top left;
+	background-size: 100%;
+}
+	//IE7-8 Hack for it
+	.old-ie .ruler{
+		background: none;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/assets/img/bkg-meter-orange-x2.png', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/assets/img/bkg-meter-orange-x2.png', sizingMethod='scale')";
+	}

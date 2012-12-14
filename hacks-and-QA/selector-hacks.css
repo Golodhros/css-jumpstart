@@ -50,8 +50,17 @@ body { -webkit-text-stroke:1px transparent; }
 	}
 </script>
 
-
- 
+/*	IE10 */
+/* We can do this in the header: */
+<!--[if !IE]><!--<script>  
+if (/*@cc_on!@*/false) {  
+    document.documentElement.className+=' ie10';  
+}  
+</script><!--<![endif]-->
+/* And later do this: */
+ .ie10 .example {  
+   /* IE10-only styles go here */  
+}
 
 /***** Attribute Hacks ******/
  

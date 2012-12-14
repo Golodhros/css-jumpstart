@@ -1,0 +1,27 @@
+/*
+Disable the dialogs that show up when you tap on an item for too long on mobile browsers
+
+The Problem:
+If you tap on an item for too long the following dialog will popup on mobile devices:
+
+The fix:
+*/
+a{
+	-webkit-touch-callout: none;
+	-moz-touch-callout: none;
+	touch-callout: none;
+}
+
+
+
+/*
+Removing outlines/highlights on links in mobile browsers
+
+The Problem:
+Mobile browsers include a visual feedback when you click on a link, as seen below:
+*/
+*:active {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-moz-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+}
