@@ -1,0 +1,175 @@
+Introduction
+
+ARIA markup was designed to insert information useful to assistive technologies into existing HTML code. It exists as a way to label controls and to provide information about their states. But adding ARIA support to a Web page does not change the presentation or behavior of that Web page to sighted users.
+
+Landmarks are a vast improvement over the rudimentary “skip to main content” technique employed prior to WAI-ARIA. If possible it is best to use these as landmarks. The presence of common, semantic, navigation landmarks allows each site to support the same standard and allows your assistive technology to provide a consistent navigation experience – an important feature for screen readers and alternate input solutions. For users with cognitive and learning disabilities the landmark information could be used to expand and collapse these regions of your page to aid in simplifying the user experience by allowing the user to manage the amount of information processed at any one time.
+
+There are also mainstream benefits of providing navigation landmarks. Your browser may assign key sequences to move focus to these sections as they can be set on every site. Navigation to these landmarks is device independent. A personal digital assistant (PDA) could assign a device key to get to them in your document.
+
+How it works?
+
+The browser plays a big role in interpreting ARIA markup. Most browsers support some type of accessibility API (application programming interface), and assistive technologies use the API to get information about what is presented on the screen. So, ARIA markup is transformed by the browser into information that fits the accessibility API it supports. Then, the information provided by the API is consumed by the assistive technology.
+
+How to use landmark roles
+
+It is a painless process to add landmark roles to existing (and new) pages. Simply add a role attribute to a container element, using the most appropriate role value for the content of the container, for example:
+
+<div class="content" role="main">
+
+ARIA Roles
+
+The ARIA roles listed below are common control types that should be familiar to Windows users. An important thing to understand about ARIA roles is that several roles may be combined to form the framework of one control on a page. For example, an editable grid consists of an object with the role of “grid”, having children with the role of “row”, having children with the role of “rowheader”, “columnheader”, or “gridcell”. 
+
+Furthermore, states and roles also relate closely to one another. ARIA roles have a list of valid states provided in the ARIA documentation. 
+
+Roles
+
+Document Regions
+
+role="application" 
+Represents a region of the page representing a unique software unit executing a set of tasks for its users. It is an area where assistive technologies should also return browse navigation keys back over to the web application in this region.
+note: If the entire web page has a role of application then it should not be treated as a navigational landmark by an assistive technology.
+
+role="article"  (<article>)
+
+
+role="banner" 
+A region that contains the prime heading or internal title of a page. Most of the content of a banner is site-oriented, rather than being page-specific. Site-oriented content typically includes things such as the logo of the site sponsor, the main heading for the page, and site-specific search tool. Typically this appears at the top of the page spanning the full width.
+Note: Within any document or application, the author SHOULD mark no more than one element with the banner role.
+
+role="complementary" (<aside>)
+A supporting section of the document that remains meaningful even when separated from the main content.There are various types of content that would appropriately have this role. For example, in the case of a portal, this may include but not be limited to show times, current weather, related articles, or stocks to watch. The content should be relevant to the main content; if it is completely separable, a more general role should be used instead.
+
+role="contentinfo" 
+Metadata that applies to the parent document.For example, footnotes, copyrights, and links to privacy statements would belong here.Note: Within any document or application, the author SHOULD mark no more than one element with the contentinfo role.
+
+role="form" (<form>)
+A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.
+
+role="main" 
+The main content of a document. This marks the content that is directly related to or expands upon the central topic of the document. Within any document or application, the author SHOULD mark no more than one element with the main role.
+Note: Within any document or application, the author SHOULD mark no more than one element with the main role.
+
+role="navigation" (<nav>)
+A collection of navigational elements (usually links) for navigating the document or related documents.
+
+role="search" 
+The search tool of a web document. This is typically a form used to submit search requests about the site or to a more general Internet search service.
+
+More roles:
+
+-alert 	
+-alertdialog 	
+-button 	
+	If this control has aria-haspopup=”true” then this is a button menu. 
+	If this control has aria-pressed defined then this is a toggle button.
+-checkbox 	
+-columnheader 	
+-combobox 	
+-dialog 	
+	This role will be announced only when a child of the dialog gets focus, and will not appear in the virtual buffer.
+-document 	
+	It indicates that the area it occupies is meant to be read as a Web page. This is the default role of the topmost object in a Web page (i.e., the “body” tag).
+-Grid 	
+-gridcell 	
+-group 	
+	Like document, this role may not be explicitly announced by JAWS. However, when it surrounds a group of form controls, JAWS should announce its name and description when entering the group.
+-heading 	
+	The aria-level gives the heading level
+-img 	
+-link 	
+-list 	
+-listbox 	
+-listitem 	
+-menu 	
+-log 	
+	Presently, this role is known to work with JAWS in Firefox only, and it functions as a type of live region.  JAWS inserts start and end strings into the virtual buffer to indicate the log.
+-menubar 	
+-menuitem 	
+-menuitemcheckbox 	
+-menuitemradio 	
+-Note 	
+	JAWS inserts start and end strings into the virtual buffer to indicate notes.
+-option 	
+-presentation 	
+	This role indicates that a feature of a Web page exists for visual formatting only. Therefore, JAWS ignores objects with this role. (Known to work in Firefox.)
+-progressbar 	
+-radio 	
+-radiogroup 	
+-row 	
+-rowheader 	
+-separator 	
+-Scrollbar 	
+	Uses the aria-orientation to determine the type of scroll bar (vertical or horizontal)
+-slider 	
+-spinbutton 	
+	JAWS announces this role as a “spin box”.
+-tab 	
+-tablist 	
+-tabpanel 	
+-textbox 	
+-toolbar 	
+	This role is indicated in the virtual buffer by start and end messages like those that exist for HTML lists.
+-tooltip 	
+	This role is not shown by JAWS in the virtual buffer or in Forms Mode, but its contents are spoken when it becomes visible.
+-tree 	
+	When in the virtual buffer, JAWS may show only one item of a tree control. This allows the user to navigate past the tree quickly.
+-treegrid 	
+-treeitem 	
+
+ARIA States
+
+-aria-activedescendant 	
+	JAWS uses this state to locate the focused items in tree views, list boxes, and other such controls that manage multiple, focusable children.
+-aria-busy 	
+	In Firefox, an element marked as aria-busy is omitted from the accessibility tree for the page.
+-aria-checked 	
+-aria-describedby 	
+-aria-disabled 	
+	JAWS announces this state for form controls.
+-aria-expanded 	
+	JAWS announces this state when in Forms Mode in tree controls.
+-aria-haspopup 	
+	JAWS announces this state for any control except buttons and combo boxes which pops up a menu. .
+-aria-hidden 	
+-aria-invalid 	
+	JAWS announces this state for form controls.
+-aria-label 	
+-aria-level 	
+	JAWS announces the level of tree items when in Forms Mode.
+-aria-multiline 	
+	JAWS uses this state to identify multiline edit controls.
+-aria-orientation 	
+	JAWS uses this state to determine if a slider is oriented horizontally or vertically.
+-aria-posinset 	
+	JAWS announces this information when in Forms Mode for trees and lists.
+-aria-pressed 	
+	JAWS announces the pressed state of a toggle button.
+-aria-readonly 	
+	JAWS uses this state to identify edit fields that are navigable with a caret, but whose content cannot be changed.
+-aria-required 	
+	JAWS announces this state for form controls.
+-aria-selected 	
+-aria-setsize 	
+	JAWS announces this information when in Forms Mode for trees and lists.
+-aria-valuetext 	
+
+ARIA Relationships
+
+Using ARIA, a page author can specify relationships among elements. JAWS supports the use of the following relationships:
+
+-aria-describedby 	
+	JAWS announces this state for form controls. The user can read the describedby text using INSERT+ALT+R.
+-aria-labelledby 	
+	JAWS announces this state for form controls.
+-Aria-flowto & aria-flowfrom 	
+	When the author defines these relationships on elements in a Web page, JAWS will announce that the element has a “flows from” or “flows to” relationship. The user can move to “flows to” elements using the EQUALS Navigation Quick Key and to “flows from” using the SHIFT+EQUALS Navigation Quick Key.
+-Aria-controls 	
+	JAWS will announce that an element has the “controls” relationship to another element on the page. The user can move to the controlled element using INSERT+ALT+M.
+
+References and more info:
+
+ARIA Landmark role support test: http://www.html5accessibility.com/tests/landmarks.html
+
+http://www.paciellogroup.com/blog/2010/10/using-wai-aria-landmark-roles/
+http://www.paciellogroup.com/blog/2010/10/jaws-support-for-aria/
