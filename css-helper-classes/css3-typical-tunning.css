@@ -41,3 +41,12 @@ element{
 	   -moz-box-shadow: inset -5px -5px 0 5px #888888;
 	        box-shadow: inset 0 0 5px 5px #888888;
 }
+
+/* Rotation of blocks */
+#G{
+	transform:rotate(6deg);
+	-ms-transform:rotate(6deg); /* IE 9 */
+	-moz-transform:rotate(6deg); /* Firefox */
+	-webkit-transform:rotate(6deg); /* Safari and Chrome */
+	-o-transform:rotate(6deg); /* Opera */
+}

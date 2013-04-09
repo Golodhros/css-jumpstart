@@ -1,0 +1,272 @@
+/* ---------------------------------------------------------
+ * iOS Like pointy buttons
+ * REF: http://cssnerd.com/2013/03/09/ios-6-arrow-button-pure-css-html/
+ */
+
+.ios-6-arrow.b-color {
+ 	display: -moz-inline-stack;
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	*vertical-align: auto;
+ 	zoom: 1;
+ 	*display: inline;
+ 	-webkit-appearance: none;
+ 	-moz-appearance: none;
+ 	appearance: none;
+ 	background: none;
+ 	position: relative;
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	height: 26px;
+ 	min-width: 20px;
+ 	cursor: pointer;
+ 	overflow: visible;
+ 	margin: 0.25em 0;
+}
+
+.ios-6-arrow.b-color.left:before {
+  -webkit-box-shadow: 1px 2px 1px -2px rgba(0, 0, 0, 0.4) inset, -1px 4px 2px -4px rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 1px 2px 1px -2px rgba(0, 0, 0, 0.4) inset, -1px 4px 2px -4px rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 1px 2px 1px -2px rgba(0, 0, 0, 0.4) inset, -1px 4px 2px -4px rgba(0, 0, 0, 0.4) inset;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjEwMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5YWFjMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQxNjE4ZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(0%, @b-bkg-color), color-stop(100%, @b-bkg-color-2));
+  background-image: -webkit-linear-gradient(top right, @b-bkg-color, @b-bkg-color-2);
+  background-image: -moz-linear-gradient(top right, @b-bkg-color, @b-bkg-color-2);
+  background-image: -o-linear-gradient(top right, @b-bkg-color, @b-bkg-color-2);
+  background-image: linear-gradient(top right, @b-bkg-color, @b-bkg-color-2);
+  -webkit-background-size: 20px 18px;
+  -moz-background-size: 20px 18px;
+  -o-background-size: 20px 18px;
+  background-size: 20px 18px;
+  -webkit-transform: rotate(-45deg) scale(0.86) skew(-9deg, -9deg);
+  -moz-transform: rotate(-45deg) scale(0.86) skew(-9deg, -9deg);
+  -ms-transform: rotate(-45deg) scale(0.86) skew(-9deg, -9deg);
+  -o-transform: rotate(-45deg) scale(0.86) skew(-9deg, -9deg);
+  transform: rotate(-45deg) scale(0.86) skew(-9deg, -9deg);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  top: 0;
+  left: 14px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid @a-bkg-color;
+  border-width: 1px;
+  border-width: 0 0 1px 1px;
+  border-color: @a-bkg-color transparent transparent @a-bkg-color;
+  background-position: -2px 0;
+  background-repeat: no-repeat;
+  content: "";
+  -webkit-border-radius: 0 6px 0 6px;
+  -moz-border-radius: 0 6px 0 6px;
+  -ms-border-radius: 0 6px 0 6px;
+  -o-border-radius: 0 6px 0 6px;
+  border-radius: 0 6px 0 6px;
+  -moz-border-radius-topright: 8px 5px;
+  -webkit-border-top-right-radius: 8px 5px;
+  border-top-right-radius: 8px 5px;
+  -moz-border-radius-bottomleft: 5px 8px;
+  -webkit-border-bottom-left-radius: 5px 8px;
+  border-bottom-left-radius: 5px 8px;
+}
+
+.ios-6-arrow.b-color.left:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -ms-border-radius: 4px 4px 4px 4px;
+  -o-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5YWFjMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQxNjE4ZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, @b-bkg-color), color-stop(100%, @b-bkg-color-2));
+  background-image: -webkit-linear-gradient(top, @b-bkg-color, @b-bkg-color-2);
+  background-image: -moz-linear-gradient(top, @b-bkg-color, @b-bkg-color-2);
+  background-image: -o-linear-gradient(top, @b-bkg-color, @b-bkg-color-2);
+  background-image: linear-gradient(top, @b-bkg-color, @b-bkg-color-2);
+  -webkit-background-size: 26px 26px;
+  -moz-background-size: 26px 26px;
+  -o-background-size: 26px 26px;
+  background-size: 26px 26px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4) inset, -1px 1px 1px -1px rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4) inset, -1px 1px 1px -1px rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4) inset, -1px 1px 1px -1px rgba(0, 0, 0, 0.4) inset;
+  text-shadow: 0 -1px 0 @b-color;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 5px 10px 5px 5px;
+  margin: 0;
+  width: auto;
+  height: 26px;
+  border: 1px solid @a-color;
+  border-width: 0 0 1px 0;
+  content: attr(data-title);
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 500;
+  color: @d-color;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-weight: 800;
+}
+
+/* Right side pointer*/
+.ios-6-arrow.b-color.right:after {
+  -webkit-box-shadow: 1px 2px 1px -2px rgba(0, 0, 0, 0.4) inset, -1px 4px 2px -4px rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 1px 2px 1px -2px rgba(0, 0, 0, 0.4) inset, -1px 4px 2px -4px rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 1px 2px 1px -2px rgba(0, 0, 0, 0.4) inset, -1px 4px 2px -4px rgba(0, 0, 0, 0.4) inset;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(0%, @b-bkg-color), color-stop(100%, @b-bkg-color-2));
+  background-image: -webkit-linear-gradient(top right, @b-bkg-color, @b-bkg-color-2);
+  background-image: -moz-linear-gradient(top right, @b-bkg-color, @b-bkg-color-2);
+  background-image: -o-linear-gradient(top right, @b-bkg-color, @b-bkg-color-2);
+  background-image: linear-gradient(top right, @b-bkg-color, @b-bkg-color-2);
+  -webkit-background-size: 20px 18px;
+  -moz-background-size: 20px 18px;
+  -o-background-size: 20px 18px;
+  background-size: 20px 18px;
+  -webkit-transform: rotate(135deg) scale(0.86) skew(-9deg, -9deg);
+  -moz-transform: rotate(135deg) scale(0.86) skew(-9deg, -9deg);
+  -ms-transform: rotate(135deg) scale(0.86) skew(-9deg, -9deg);
+  -o-transform: rotate(135deg) scale(0.86) skew(-9deg, -9deg);
+  transform: rotate(135deg) scale(0.86) skew(-9deg, -9deg);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  top: 0;
+  left: -13px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid @a-bkg-color;
+  border-width: 1px;
+  border-width: 1px 1px 0 0;
+  border-color: @a-bkg-color transparent transparent @a-bkg-color;
+  background-position: -2px 0;
+  background-repeat: no-repeat;
+  content: "";
+  -webkit-border-radius: 0 6px 0 6px;
+  -moz-border-radius: 0 6px 0 6px;
+  -ms-border-radius: 0 6px 0 6px;
+  -o-border-radius: 0 6px 0 6px;
+  border-radius: 0 6px 0 6px;
+  -moz-border-radius-topright: 8px 5px;
+  -webkit-border-top-right-radius: 8px 5px;
+  border-top-right-radius: 8px 5px;
+  -moz-border-radius-bottomleft: 5px 8px;
+  -webkit-border-bottom-left-radius: 5px 8px;
+  border-bottom-left-radius: 5px 8px;
+}
+.ios-6-arrow.b-color.right:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -ms-border-radius: 4px 4px 4px 4px;
+  -o-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, @b-bkg-color), color-stop(100%, @b-bkg-color-2));
+  background-image: -webkit-linear-gradient(top, @b-bkg-color, @b-bkg-color-2);
+  background-image: -moz-linear-gradient(top, @b-bkg-color, @b-bkg-color-2);
+  background-image: -o-linear-gradient(top, @b-bkg-color, @b-bkg-color-2);
+  background-image: linear-gradient(top, @b-bkg-color, @b-bkg-color-2);
+  -webkit-background-size: 26px 26px;
+  -moz-background-size: 26px 26px;
+  -o-background-size: 26px 26px;
+  background-size: 26px 26px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4) inset, 1px 1px 1px -1px rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4) inset, 1px 1px 1px -1px rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4) inset, 1px 1px 1px -1px rgba(0, 0, 0, 0.4) inset;
+  text-shadow: 0 -1px 0 @b-color;
+  position: relative;
+  top: 0;
+  left: 1px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 5px 5px 5px 10px;
+  margin: 0;
+  width: auto;
+  height: 26px;
+  border: 1px solid @a-color;
+  border-width: 0 0 1px 0;
+  content: attr(data-title);
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 500;
+  color: @d-color;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.ios-6-arrow.b-color.left:hover:after,
+.ios-6-arrow.b-color.right:hover:before{
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, @c-color), color-stop(100%, @b-color));
+  background-image: -webkit-linear-gradient(top, @c-color, @b-color);
+  background-image: -moz-linear-gradient(top, @c-color, @b-color);
+  background-image: -o-linear-gradient(top, @c-color, @b-color);
+  background-image: linear-gradient(top, @c-color, @b-color);
+  -webkit-background-size: 26px 26px;
+  -moz-background-size: 26px 26px;
+  -o-background-size: 26px 26px;
+  background-size: 26px 26px;
+}
+.ios-6-arrow.b-color.left:hover:before,
+.ios-6-arrow.b-color.right:hover:after {
+  background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(0%, @c-color), color-stop(100%, @b-color));
+  background-image: -webkit-linear-gradient(top right, @c-color, @b-color);
+  background-image: -moz-linear-gradient(top right, @c-color, @b-color);
+  background-image: -o-linear-gradient(top right, @c-color, @b-color);
+  background-image: linear-gradient(top right, @c-color, @b-color);
+  -webkit-background-size: 20px 18px;
+  -moz-background-size: 20px 18px;
+  -o-background-size: 20px 18px;
+  background-size: 20px 18px;
+}
+
+.ios-6-arrow.b-color.right:hover:after {
+  background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(0%, @b-color), color-stop(100%, @c-color));
+  background-image: -webkit-linear-gradient(top right, @b-color, @c-color);
+  background-image: -moz-linear-gradient(top right, @b-color, @c-color);
+  background-image: -o-linear-gradient(top right, @b-color, @c-color);
+  background-image: linear-gradient(top right, @b-color, @c-color);
+}
