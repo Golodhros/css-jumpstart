@@ -18,3 +18,94 @@ h3, .h3{ font-size: 1.5em; margin: 0.1em 0 0.5em;}
 h4, .h4{ font-size: 1em; margin: 0.1em 0 0.3em;}
 h5, .h5{ font-size: 0.9em; 	margin: 0em 0 0.2em;}
 h6, .h6{ font-size: 0.8em;  margin: 0em 0 0.2em;}
+
+/* Padding and Margins*/
+/*
+ ***** Type ****
+ *  p -> padding
+ *  m -> magin
+ *
+ ***** Position ****
+ *  a -> all
+ *  t -> top
+ *  b -> bottom
+ *  l -> left
+ *  r -> right
+ *  h -> horizontal
+ *  v -> vertical
+ *
+ ***** Size ****
+ *  l -> large
+ *  m -> medium
+ *  s -> small
+ *  n -> none
+ *
+ */
+
+/* Padding */
+.pan{ padding: 0; }
+.ptn{ padding-top: 0;}
+.pbn{ padding-bottom: 0;}
+.pln{ padding-left: 0;}
+.prn{ padding-right: 0;}
+.phn{ padding-left: 0; padding-right: 0;}
+.pvn{ padding-top: 0; padding-bottom: 0;}
+
+.pas{ padding: 0.5em; }
+.pts{ padding-top: 0.5em;}
+.pbs{ padding-bottom: 0.5em;}
+.pls{ padding-left: 0.5em;}
+.prs{ padding-right: 0.5em;}
+.phs{ padding-left: 0.5em; padding-right: 0.5em;}
+.pvs{ padding-top: 0.5em; padding-bottom: 0.5em;}
+
+.pam{ padding: 1em; }
+.ptm{ padding-top: 1em;}
+.pbm{ padding-bottom: 1em;}
+.plm{ padding-left: 1em;}
+.prm{ padding-right: 1em;}
+.phm{ padding-left: 1em; padding-right: 1em;}
+.pvm{ padding-top: 1em; padding-bottom: 1em;}
+
+.pal{ padding: 1.5em; }
+.ptl{ padding-top: 1.5em;}
+.pbl{ padding-bottom: 1.5em;}
+.pll{ padding-left: 1.5em;}
+.prl{ padding-right: 1.5em;}
+.phl{ padding-left: 1.5em; padding-right: 1.5em;}
+.pvl{ padding-top: 1.5em; padding-bottom: 1.5em;}
+
+/* Margin */
+.man{ margin: 0; }
+.mtn{ margin-top: 0;}
+.mbn{ margin-bottom: 0;}
+.mln{ margin-left: 0;}
+.mrn{ margin-right: 0;}
+.mhn{ margin-left: 0; margin-right: 0;}
+.mvn{ margin-top: 0; margin-bottom: 0;}
+
+.mas{ margin: 0.5em; }
+.mts{ margin-top: 0.5em;}
+.mbs{ margin-bottom: 0.5em;}
+.mls{ margin-left: 0.5em;}
+.mrs{ margin-right: 0.5em;}
+.mhs{ margin-left: 0.5em; margin-right: 0.5em;}
+.mvs{ margin-top: 0.5em; margin-bottom: 0.5em;}
+
+.mam{ margin: 1em; }
+.mtm{ margin-top: 1em;}
+.mbm{ margin-bottom: 1em;}
+.mlm{ margin-left: 1em;}
+.mrm{ margin-right: 1em;}
+.mhm{ margin-left: 1em; margin-right: 1em;}
+.mvm{ margin-top: 1em; margin-bottom: 1em;}
+
+.mal{ margin: 1.5em; }
+.mtl{ margin-top: 1.5em;}
+.mbl{ margin-bottom: 1.5em;}
+.mll{ margin-left: 1.5em;}
+.mrl{ margin-right: 1.5em;}
+.mhl{ margin-left: 1.5em; margin-right: 1.5em;}
+.mvl{ margin-top: 1.5em; margin-bottom: 1.5em;}
+
+
