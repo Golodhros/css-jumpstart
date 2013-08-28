@@ -1,0 +1,83 @@
+/*
+ * REF: http://mobile.smashingmagazine.com/2013/07/22/simple-responsive-images-with-css-backgrounds/
+ */
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    /* styles for Retina-type displays */
+}
+
+
+/*
+ * Making the images accesible
+ * <div id="image" role="img" aria-label="Textual Description"></div>
+*/
+
+/*
+ * Scaling images
+ *
+<div class="hero">
+    <span id="cafe" role="img" aria-label="Coffee and croissant.">
+        <span class="inner">
+        </span>
+    </span>
+</div>
+ *
+ */
+
+ .hero #cafe {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+ }
+ .hero #cafe .inner {
+    padding-top: 63.35%; /* height/width of image */
+    display: block;
+    height: 0;
+ }
+
+ /* default screen, non-retina */
+ .hero #cafe { background-image: url("../img/candc970.jpg"); }
+
+ @media only screen and (max-width: 320px) {
+     /* Small screen, non-retina */
+     .hero #cafe { background-image: url("../img/candc290.jpg"); }
+ }
+ @media
+ only screen and (min-resolution: 2dppx) and (max-width: 320px) {
+     /* Small screen, retina */
+     .hero #cafe { background-image: url("../img/candc290@2x.jpg"); }
+ }
+ @media only screen and (min-width: 321px) and (max-width: 538px) {
+     /* Medium screen, non-retina */
+     .hero #cafe { background-image: url("../img/candc538.jpg"); }
+ }
+ @media
+ only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
+     /* Medium screen, retina */
+     .hero #cafe { background-image: url("../img/candc538@2x.jpg"); }
+ }
+ @media
+ only screen and (min-resolution: 2dppx) and (min-width: 539px) {
+     /* Large screen, retina */
+     .hero #cafe { background-image: url("../img/candc970@2x.jpg"); }
+ }
+
+
+/* Caveats
+- No separation of concerns between CSS and HMTL
+- If you need to support IE8 right now, you might consider creating a separate style sheet for IE8 that specifies fixed image sizes rather than scaling the images.
+*/
