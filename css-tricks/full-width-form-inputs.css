@@ -1,0 +1,16 @@
+/*
+ * This is particularly useful on things like <textarea> which you need to explicitly set
+ * to 100% width if you want it to fill a parent container, but is also likely you want padding on.
+ * Without box-sizing, you would an elaborate faking strategy involving extra wrapper elements.
+ * References:
+ * http://css-tricks.com/almanac/properties/b/box-sizing/
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+ */
+
+input,
+textarea {
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+    width: 100%;
+}

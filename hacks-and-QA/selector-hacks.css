@@ -1,12 +1,13 @@
-
-/***** Selector Hacks ******/
+/*
+ * Reference: http://mynthon.net/howto/-/webdev/CSS-big-list-of-css-hacks.txt
+ */
 
 /* IE 6 and below */
 * html #uno  { color: red }
- 
+
 /* IE 7 and below */
 *:first-child+html #dos { color: red }
- 
+
 /* IE 7 and modern browsers */
 html>body #tres { color: red }
 
@@ -23,10 +24,10 @@ html:first-child #cinco { color: red }
 
 /* Safari */
 html[xmlns*=""] body:last-child #seis { color: red }
- 
+
 /*safari 3+, chrome 1+, opera9+, ff 3.5+ */
 body:nth-of-type(1) #siete { color: red }
- 
+
 /* safari 3+, chrome 1+, opera9+, ff 3.5+ */
 body:first-of-type #ocho {  color: red }
 
@@ -52,34 +53,34 @@ body { -webkit-text-stroke:1px transparent; }
 
 /*	IE10 */
 /* We can do this in the header: */
-<!--[if !IE]><!--<script>  
-if (/*@cc_on!@*/false) {  
-    document.documentElement.className+=' ie10';  
-}  
+<!--[if !IE]><!--<script>
+if (/*@cc_on!@*/false) {
+    document.documentElement.className+=' ie10';
+}
 </script><!--<![endif]-->
 /* And later do this: */
- .ie10 .example {  
-   /* IE10-only styles go here */  
+ .ie10 .example {
+   /* IE10-only styles go here */
 }
 
 /***** Attribute Hacks ******/
- 
+
 /* IE6 */
 #once { _color: blue }
- 
+
 /* IE6, IE7 */
 #doce { *color: blue; /* or #color: blue */ }
- 
+
 /* Everything but IE6 */
 #diecisiete { color/**/: blue }
- 
+
 /* IE6, IE7, IE8 */
 #diecinueve { color: blue\9; }
- 
+
 /* IE7, IE8 */
 #veinte { color/*\**/: blue\9; }
- 
+
 /* IE6, IE7 -- acts as an !important */
 #veintesiete { color: blue !ie; } /* string after ! can be anything */
- 
+
 

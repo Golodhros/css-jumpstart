@@ -12,7 +12,7 @@
 			background-position: X Y || (top||bottom||center) (left||right||center);
 			background-attachment: scroll || fixed;
 	}
-	
+
 /*	Example	*/
 	element {
 		background:
@@ -43,7 +43,7 @@
 			line-height: normal || (number+unit);
 			font-family:name,"more names";
 	}
-	
+
 /*	Defaults	*/
 	element {
 			font-style: normal;
@@ -53,7 +53,7 @@
 			line-height: normal;
 			font-family:inherit;
 	}
-	
+
 /***	Border	***/
 
 /*	Border Properties	*/
@@ -62,7 +62,7 @@
 			border-style: (numerous);
 			border-color: color || #hex || (rgb / % || 0-255);
 	}
-	
+
 /*	Example	*/
 	element {
 			border:
@@ -70,7 +70,7 @@
 			 groove
 			 linen
 	}
-	
+
 /***	Margin and Padding	***/
 
 /*	Margin Properties	*/
@@ -80,7 +80,7 @@
 			margin-bottom: number+unit;
 			margin-left: number+unit;
 	}
-	
+
 /***	List-Style	***/
 
 /*	list-style properties	*/
@@ -95,11 +95,11 @@
 			list-style:square inside url(image.png);
 	}
 	/* in this particular case if image.png is not available
-		 then a square will be provided as secondary */	
-	
+		 then a square will be provided as secondary */
+
 /*	Defaults	*/
 	element {
 			list-style-type:disc;
 			list-style-position:outside;
 			list-style-image:none;
-	}				
+	}

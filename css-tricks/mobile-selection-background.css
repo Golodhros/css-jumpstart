@@ -1,0 +1,14 @@
+/*
+ * Sometimes you want to customize the button tap highlight color so that it matches other colors on your site,
+ * or you may just want to remove it all together
+ */
+
+/* lets try a lighter blue... */
+html {
+    -webkit-tap-highlight-color: rgba(201, 224, 253, 0.8);
+}
+
+/* for some buttons or links, simply hide the selection color all together */
+.no-highlight {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
