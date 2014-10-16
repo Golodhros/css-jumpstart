@@ -45,3 +45,20 @@
 
     border-right:10px solid blue;
 }
+
+/*Bootstrap size*/
+.caret{
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-top: 4px solid;
+  display: inline-block;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  width: 0;
+}
+
+.is-active .caret{
+  border-bottom: 4px solid;
+  border-top: none;
+}

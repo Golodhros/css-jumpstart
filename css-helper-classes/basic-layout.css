@@ -1,0 +1,67 @@
+/* ---------------------------------------------------------
+ *  1- Positioning Classes
+ */
+
+.l-block        {display: block !important;}
+.l-inline-block {display: inline-block !important;}
+.l-inline       {display: inline !important;}
+
+.l-right    {float:right;}
+.l-left     {float:left;}
+.l-center   {margin: 0 auto !important;}
+
+
+/* ---------------------------------------------------------
+ *  2- Font related
+ */
+
+.left-aligned   {text-align: left;}
+.right-aligned  {text-align: right;}
+.center-aligned {text-align: center;}
+
+.f-upper{text-transform: uppercase; }
+.f-light{font-weight: 400;}
+.f-bold{font-weight: 800;}
+
+.is-hidden {display: none !important;}
+
+
+/* ---------------------------------------------------------
+ *  3- Lists
+ */
+
+.plain-list{
+    list-style: none;
+    margin: 0;
+}
+.inline-list{
+    list-style: none;
+    margin: 0;
+
+    .item{
+        float: left;
+        margin-right: 0.5em;
+    }
+}
+
+
+/* ---------------------------------------------------------
+ *  4- Fade opacity with animation
+ */
+
+.is-fade-out {
+    -moz-opacity: 0!important;
+    opacity: 0!important;
+}
+
+.is-fade-in {
+    -moz-opacity: 1!important;
+    opacity: 1!important;
+}
+
+.is-fade-out, .is-fade-in {
+    -moz-transition: opacity 0.3s linear 0s;
+    -o-transition: opacity 0.3s linear 0s;
+    -webkit-transition: opacity 0.3s linear 0s;
+    transition: opacity 0.3s linear 0s;
+}

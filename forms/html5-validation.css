@@ -1,0 +1,72 @@
+/* One solution */
+input:invalid {
+    box-shadow: none; /* FF */
+    outline: 0;       /* IE 10 */
+}
+input:invalid:focus {
+    border: 1px solid red;
+}
+/* Normal border/outline */
+input:not(:focus):invalid {
+    border: 1px solid #ccc;
+}
+:valid {
+    border: 1px solid green;
+}
+
+/* Consistent Display of Errors */
+:invalid {
+    box-shadow: none; /* FF */
+    outline: 0;       /* IE 10 */
+}
+
+:invalid {
+    border: 1px solid red;
+}
+:valid {
+    border: 1px solid green;
+}
+
+
+/* The list of pseudo classes
+ * Ref: http://www.wufoo.com/html5/
+ */
+
+/* Pseudo classes */
+:required { }
+:optional { }
+:valid { }
+:invalid { }
+:default { }
+:in-range { }
+:out-of-range { }
+:not()
+
+/* Attribute Selectos */
+[autofocus] { }
+[autocomplete] { }
+[list] { }
+[placeholder] { }
+[type=range] { /* and other types */ }
+[multiple]
+
+/* Webkit Specific */
+::-webkit-validation-bubble {}
+::-webkit-validation-bubble-message {}
+::-webkit-validation-bubble-arrow {}
+::-webkit-validation-bubble-arrow-clipper {}
+
+::-webkit-input-placeholder {
+  /* Style placeholder text */
+}
+[type=search] {
+  -webkit-appearance: none;
+}
+::-webkit-validation-bubble-message {
+     padding: 50px;
+}
+
+/* FF Specific */
+:-moz-placeholder  {
+  /* Style placeholder text */
+}

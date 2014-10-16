@@ -1,0 +1,23 @@
+/*
+ * Solution for the first page loaded via jQM
+ * Add the class initHandler to the body tag,
+ * and remove it on pageshow
+ */
+
+.initHandler:before {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 115%;
+    z-index: 999999;
+    background-color: white; content: "initializing...";
+    text-align: center;
+    color: #ccc;
+    text-shadow: none;
+    line-height: 150px;
+    vertical-align: bottom;
+}

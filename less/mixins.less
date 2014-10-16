@@ -97,3 +97,24 @@
   -ms-transform: translate(@x, @y);
   transform: translate(@x, @y);
 }
+
+
+/*
+ * Font Smoothing on OSX
+ * http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+ */
+.font-smoothing(@value) when (@value = on) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.font-smoothing(@value) when (@value = off) {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+.f-dark-on-light {
+    .font-smoothing(off);
+}
+.f-light-on-dark {
+    .font-smoothing(on);
+}

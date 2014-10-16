@@ -1,0 +1,8 @@
+/*
+ * Sometimes we want to disable selection on mobile devices
+ * Reference: http://stackoverflow.com/questions/5995210/disabling-user-selection-in-uiwebview
+ */
+.prevent-selection{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}

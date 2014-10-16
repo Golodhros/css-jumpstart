@@ -1,0 +1,16 @@
+/* Sticky Footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 70px; /* bottom = footer height */
+}
+.footer{
+    text-align: left;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
