@@ -7,6 +7,7 @@ The structure is:
 * /accesibility
 * /conventions&best-practices
 * /css-helper-classes
+* /css-mobile-tricks
 * /css-tricks
 * /hacks-and-QA
 * /reference
