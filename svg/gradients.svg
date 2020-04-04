@@ -1,0 +1,132 @@
+
+The <stop> nodes represent the color selections and their locations on our mapped gradient, which we will discuss further in the following section.
+
+
+Gradient Attributes
+
+The attribute values for <linearGradient> and <radialGradient> allow us to specify the colors and coordinates of our gradients.
+
+ID
+A gradient requires a unique ID in order for it to be called on through “fill” and “stroke” attributes.
+
+x1, x2, y1, y2
+The values within the x1, x2, y1, y2 attributes specify the start and end coordinates for linear gradients along the appropriate axis. These values default to “0” if left unspecified, except for x2 which defaults to “100%”.
+
+cx, cy, r, fx, fy
+Radial gradient attributes are similar to those of linear, except our coordinates will be handled much differently. Instead of being based on a straight line, these gradients will be mapped circularly.
+
+cx, cy, and r (radius) define the outermost circle for the gradient, with this outer perimeter being the 100% stop point. fx and fy define the focal point of the gradient, with the 0% stop mapping to these values.
+
+<stop>
+Within the gradient element itself we include the <stop> nodes. The attribute values within <stop> nodes define the colors for our gradient, where they should be placed, and any opacity that we want applied.
+
+The offset property indicates where the gradient stop is located. For linear gradients this location will be a distance along the gradient line, for radial gradients it will be a distance from the focal point to the edge of the mapped circle.
+
+stop-color indicates what color will be used at the correlating stop point, and stop-opacity sets an opacity at this same point. Depending on how many stops we wish to use we can choose between creating subtle, gradual color changes with only a few stops, or create stripes with several closely mapped stops.
+
+<animate>
+
+<animate> element will allow us to select gradient attributes and properties and then assign different values to them over a specified duration of time. In short, we can move them! The <animate> element will reside within the element we wish to animate. Here is the structure for a basic animation on a rectangle:
+
+    <defs>
+        <radialGradient id="smallGradient" fy="90%">
+          <stop offset="0%" stop-color="#f4c708"></stop>
+          <stop offset="100%" stop-color="#f7e69a"></stop>
+          <animate attributeName="fy" dur="700ms" from="90%" to="0%" repeatCount="indefinite" />
+        </radialGradient>
+        <radialGradient id="largeGradient" fy="90%">
+          <stop offset="0%" stop-color="#ff8806"></stop>
+          <stop offset="100%" stop-color="#d9574a"></stop>
+          <animate attributeName="fy" dur="700ms" from="90%" to="0%" repeatCount="indefinite" />
+        </radialGradient>
+    </defs>
+
+
+Animate Attributes
+
+Within the <animate> element we will use attributes to select our target and specify the details of the animation. Here is a look at the specific attributes we will focus on in the demos:
+
+attributeName
+
+attributeName defines the name of the target attribute to be animated. In taking another look at the animation code above, the attributeName value is “x” so that we can target and animate our shape on the x axis.
+
+to, from
+
+The “to” and “from” attributes indicate the initial and final value of the targeted attribute.
+
+values
+
+Within the <values> attribute we can create a list of values separated by semicolons, and the animation will apply these values in order over the duration of the action.
+
+By including this attribute any “from” or “to” values within the same <animate> element will be ignored, meaning that it takes the place of these values once included so there is no need for them.
+
+dur
+
+The duration defines within what time span the animation should complete.
+
+fill
+
+While “fill” often refers to the interior color of SVG, it has a different meaning in the context of an <animate> attribute. We can set a value of “freeze” within this attribute so that the animation freezes once it is complete and does not restart.
+
+repeatCount
+
+The repeatCount attribute specifies the number of times an animation should take place. This value can be either a number, or “indefinite”.
+
+
+
+Ref: https://designmodo.com/animate-svg-gradients/
+
+
+<!-- Horizontal gradient moving to the right -->
+<defs>
+    <linearGradient id="loadingGradient" x1="0%" x2="100%" y1="0%" y2="0%">
+        <stop offset="0%" stopColor="#f6f7f9">
+            <animate
+                attributeName="stop-color"
+                values="#f6f7f9;#f6f7f9;#f6f7f9;#f6f7f9;red"
+                dur="3s"
+                repeatCount="indefinite"
+            />
+        </stop>
+        <stop offset="20%" stopColor="red">
+            <animate
+                attributeName="stop-color"
+                values="red;#f6f7f9;#f6f7f9;#f6f7f9;#f6f7f9"
+                dur="3s"
+                repeatCount="indefinite"
+            />
+        </stop>
+        <stop offset="40%" stopColor="#f6f7f9">
+            <animate
+                attributeName="stop-color"
+                values="#f6f7f9;red;#f6f7f9;#f6f7f9;#f6f7f9"
+                dur="3s"
+                repeatCount="indefinite"
+            />
+        </stop>
+        <stop offset="60%" stopColor="#f6f7f9">
+            <animate
+                attributeName="stop-color"
+                values="#f6f7f9;#f6f7f9;red;#f6f7f9;#f6f7f9"
+                dur="3s"
+                repeatCount="indefinite"
+            />
+        </stop>
+        <stop offset="80%" stopColor="#f6f7f9">
+            <animate
+                attributeName="stop-color"
+                values="#f6f7f9;#f6f7f9;#f6f7f9;red;#f6f7f9"
+                dur="3s"
+                repeatCount="indefinite"
+            />
+        </stop>
+        <stop offset="100%" stopColor="#f6f7f9">
+            <animate
+                attributeName="stop-color"
+                values="#f6f7f9;#f6f7f9;#f6f7f9;#f6f7f9;red"
+                dur="3s"
+                repeatCount="indefinite"
+            />
+        </stop>
+    </linearGradient>
+</defs>

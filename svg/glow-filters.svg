@@ -1,0 +1,28 @@
+<!-- From: https://jsfiddle.net/g57red1p/81/ -->
+<defs>
+    <!-- We set the filter effect area to be really big to guarantee we see it all... -->
+    <filter id="white-glow" tryarc>
+        <feFlood result="flood" flood-color="#ffffff" flood-opacity="1"></feFlood>
+        <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
+        <feMorphology in="mask" result="dilated" operator="dilate" radius="2"></feMorphology>
+        <feGaussianBlur in="dilated" result="blurred" stdDeviation="5"></feGaussianBlur>
+        <feMerge>
+            <feMergeNode in="blurred"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+    </filter>
+
+    <!-- The only difference in this filter is its "flood-color" -->
+    <filter id="purple-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
+        <feFlood result="flood" flood-color="#7d26cd" flood-opacity="1"></feFlood>
+        <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
+        <feMorphology in="mask" result="dilated" operator="dilate" radius="2"></feMorphology>
+
+        <feGaussianBlur in="dilated" result="blurred" stdDeviation="5"></feGaussianBlur>
+        <feMerge>
+            <feMergeNode in="blurred"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+    </filter>
+
+</defs>

@@ -1,0 +1,294 @@
+/*
+ * Collection of CSS snippets
+ * https://justmarkup.com/log/2018/03/collection-of-css-snippets/
+ */
+
+/* Responsive Media
+ * Using this all the img, video and audio elements won’t be larger than 100% of the container width
+ */
+img,
+video,
+audio {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Text Selection
+ * If you want to change the default browser style how a text looks when selected you can use the ::selection pseudo-element.
+ */
+::selection {
+  color: #000;
+  background: #fbd404;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Flexbox/Grid */
+.fukol-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5em;
+}
+.fukol-grid > * {
+  flex: 1 0 5em;
+  margin: 0.5em;
+}
+
+.class {
+  display: flex;
+  justify-content: space-between;
+}
+
+::root {
+  --min-col-width: 250px;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--min-col-width), 1fr));
+}
+
+/* Center Elements */
+.🦄 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.foo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, -50%);
+}
+
+/* Aspect Ratio */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  /* 16:9 */
+  --ratio-h: 16;
+  --ratio-v: 9;
+
+  height: 0;
+  overflow: hidden;
+  padding-top: calc(var(--ratio-v) / var(--ratio-h) * 100%);
+  position: relative;
+}
+
+.wrapper > .element {
+  height: auto;
+  position: absolute;
+  width: 100%;
+}
+
+div {
+  --ratio-x: 16;
+  --ratio-y: 9;
+  position: relative;
+}
+
+div::before {
+  display: block;
+  content: "";
+  padding-top: calc(var(--ratio-y) / var(--ratio-x) * 100%);
+}
+
+
+/* cursor:pointer */
+label,
+button,
+input,
+select {
+    cursor: pointer;
+}
+
+label[for] {cursor: pointer;}
+
+/* Truncation */
+.ellipsis {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.truncated {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 15rem;
+}
+
+/* Max width */
+.container {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 75ch;
+}
+
+p {
+  max-width: 38em;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Responsive font-size */
+:root {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+.class {
+  font-size: calc(1em + 1vw);
+}
+
+/* Print external URLs */
+@media print {
+    a {
+        text-decoration: underline;
+    }
+    [href]:not([href^="#"]):after {
+        content: ' ('attr(href)') ';
+    }
+}
+
+/* Visually hidden
+ * This way you can make text available to screen readers while hiding it visually.
+ **/
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* Normalize */
+abbr[title],
+acronym[title],
+dfn {
+  cursor: help;
+}
+
+img {
+  font-style: italic;
+}
+
+textarea {
+  resize: vertical;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+[aria-disabled="true"] {
+  cursor: default;
+  pointer-events: none;
+}
+
+.no-js button[type="button"] {
+  display: none;
+}
+
+svg {
+  fill: currentColor;
+}
+
+sub,
+sup {
+  line-height: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+/* Debugging */
+* {
+    border: 1px solid red:
+}
+
+img:not([alt]),
+img[alt=""] {
+  outline: 5px solid red;
+}
+
+/* Box Shadow */
+.classname {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* HTML for Emails */
+.★:not(#★){ /* for targeting AOL */}
+@media yahoo{/* for targeting Yahoo */}
+u+ .body .foo{/* for targeting Gmail */}
+#MessageWebViewDiv .foo{/* for targeting Samsung mail */}
+[OWA] .foo{/* for targeting http://Outlook.com  */}
+
+

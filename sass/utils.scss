@@ -1,0 +1,34 @@
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// Usage
+$length: 42px;
+$value: strip-unit($length);
+// -> 42
+
+
+
+
+
+// Confirming a number’s unit: unit()
+$rem-size: 16px !default;
+
+@mixin px-rem($property, $value) {
+  @if unit($value) == 'px' {
+    #{$property}: $value;
+    #{$property}: $value / $rem-size * 1rem;
+  } @elseif unit($value) == 'rem' {
+    #{$property}: $value * $rem-size / 1rem;
+    #{$property}: $value;
+  } @else {
+    @warn "Make sure `$value` is in px or rem.";
+  }
+}
