@@ -1,0 +1,52 @@
+// Using Maps to generate classes
+// Learn more on https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+// Test it on https://www.sassmeister.com/
+
+// Map of Database names and icon paths
+$data-stores: (
+    database: "/static/images/icons/Database.svg",
+    hive: "/static/images/icons/logo-hive.svg",
+    bigquery: "/static/images/icons/logo-bigquery.svg",
+);
+
+// Map of Dashboard names and icon paths
+$dashboards: (
+    dashboard: "/static/images/icons/dashboard.svg",
+    mode: "/static/images/icons/logo-mode.svg",
+);
+
+// Given a Map of key/value pairs, generates a new class
+@mixin iconBackgrounds($map) {
+    @each $name, $url in $map {
+        &.icon-#{$name} {
+            background: transparent url($url) center center / contain no-repeat;
+        }
+    }
+}
+
+.icon {
+    // Other styles
+
+    // Generate Icons
+    @include iconBackgrounds($data-stores);
+    @include iconBackgrounds($dashboards);
+}
+
+// This produces
+/*
+.icon.icon-database {
+  background: transparent url("/static/images/icons/Database.svg") center center/contain no-repeat;
+}
+.icon.icon-hive {
+  background: transparent url("/static/images/icons/logo-hive.svg") center center/contain no-repeat;
+}
+.icon.icon-bigquery {
+  background: transparent url("/static/images/icons/logo-bigquery.svg") center center/contain no-repeat;
+}
+.icon.icon-dashboard {
+  background: transparent url("/static/images/icons/dashboard.svg") center center/contain no-repeat;
+}
+.icon.icon-mode {
+  background: transparent url("/static/images/icons/logo-mode.svg") center center/contain no-repeat;
+}
+*/
