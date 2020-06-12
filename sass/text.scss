@@ -1,0 +1,8 @@
+// Text truncate
+// Ref: Bootstrap 4 (https://github.com/twbs/bootstrap/blob/master/scss/mixins/_text-truncate.scss)
+// Requires inline-block or block for proper styling
+@mixin text-truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
