@@ -1,0 +1,62 @@
+// New Typography variables based on LPL
+$text-heading-font-family: $font-family-header;
+
+$w1-font-size: 20px;
+$w1-line-height: 24px;
+
+$w2-font-size: 16px;
+$w2-line-height: 20px;
+
+$w3-font-size: 14px;
+$w3-line-height: 18px;
+
+$w1-headline-font-size: 36px;
+$w1-headline-line-height: 44px;
+
+$w2-headline-font-size: 26px;
+$w2-headline-line-height: 32px;
+
+$w3-headline-font-size: 22px;
+$w3-headline-line-height: 28px;
+
+$w1-caption-font-size: $w2-font-size;
+$w1-caption-line-height: $w2-line-height;
+
+$w2-caption-font-size: 12px;
+$w2-caption-line-height: 16px;
+
+$title-font-weight: $font-weight-body-bold;
+
+%text-headline-w1 {
+    font-family: $text-heading-font-family;
+    font-size: $w1-headline-font-size;
+    line-height: $w1-headline-line-height;
+    font-weight: $title-font-weight;
+}
+
+%text-headline-w2 {
+    font-family: $text-heading-font-family;
+    font-size: $w2-headline-font-size;
+    line-height: $w2-headline-line-height;
+    font-weight: $title-font-weight;
+}
+
+%text-headline-w3 {
+    font-family: $text-heading-font-family;
+    font-size: $w3-headline-font-size;
+    line-height: $w3-headline-line-height;
+    font-weight: $title-font-weight;
+}
+
+// Using them
+.text-headline-w1 {
+    @extend %text-headline-w1;
+}
+
+.text-headline-w2 {
+    @extend %text-headline-w2;
+}
+
+.text-headline-w3 {
+    @extend %text-headline-w3;
+}
